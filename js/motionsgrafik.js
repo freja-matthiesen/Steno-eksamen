@@ -108,4 +108,8 @@ muscle.addEventListener("mouseleave", () => {
 muscle.addEventListener("click", () => {
     showInfoPopup("Ømhed i kroppen", "Ømhed i musklerne opstår ofte, når kroppen er spændt i længere tid. Mange, der kæmper med angst, spænder ubevidst i skuldre, nakke eller ryg, hvilket over tid kan føre til ømhed og ubehag");
   });
-  
+
+// pop-up til iphone
+phone.addEventListener("click", () => {
+    showInfoPopup("Usikkerhed", "Selv noget så hverdagsagtigt som en iPhone kan være en trigger – måske fordi den forbindes med dårlige nyheder, sociale medier eller en konstant følelse af at skulle være på.");
+  });
