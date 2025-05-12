@@ -31,3 +31,9 @@ crowd.addEventListener("mouseleave", () => {
   crowdtalksound.pause();
   crowdtalksound.currentTime = 0;
 });
+
+//Pop-up til gruppen
+crowd.addEventListener("click", () => {
+    showInfoPopup("Store grupper", "En stor gruppe mennesker kan føles overvældende og give en følelse af ikke at kunne overskue situationen eller miste kontrollen.");
+  });
+  
