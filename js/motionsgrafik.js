@@ -126,3 +126,51 @@ const infoPopup = document.getElementById("infoPopup");
 const infoTitle = document.getElementById("infoTitle");
 const infoText = document.getElementById("infoText");
 const closeInfoBtn = document.getElementById("closeInfoPopup");
+
+// pop-op til hjertet
+function showInfoPopup(title, text) {
+    infoTitle.textContent = title;
+    infoText.textContent = text;
+    infoPopup.style.display = "flex";
+  }
+  
+  // Luk-knap til hjertet
+  closeInfoBtn.addEventListener("click", () => {
+    infoPopup.style.display = "none";
+  });
+  
+  // pop-op til gruppen
+  function showInfoPopup1(title, text) {
+    infoTitle1.textContent = title;
+    infoText1.textContent = text;
+    infoPopup1.style.display = "flex";
+  }
+  
+  // Luk-knap til gruppen
+  closeInfoBtn1.addEventListener("click", () => {
+    infoPopup1.style.display = "none";
+  });
+  
+  // pop-op til ambulancen
+  function showInfoPopup2(title, text) {
+    infoTitle2.textContent = title;
+    infoText2.textContent = text;
+    infoPopup2.style.display = "flex";
+  }
+  
+  // Luk-knap til ambulancen
+  closeInfoBtn2.addEventListener("click", () => {
+    infoPopup2.style.display = "none";
+  });
+  
+  // pop-op til tankemylder
+  function showInfoPopup3(title, text) {
+    infoTitle3.textContent = title;
+    infoText3.textContent = text;
+    infoPopup3.style.display = "flex";
+  }
+  
+  // Luk-knap til tankemylder
+  closeInfoBtn3.addEventListener("click", () => {
+    infoPopup3.style.display = "none";
+  });
