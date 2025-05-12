@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'BagelFatOne';
+    src: url('fonts/BagelFatOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
 body {
     margin: 0;
     font-family: sans-serif;
