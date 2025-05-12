@@ -113,3 +113,16 @@ muscle.addEventListener("click", () => {
 phone.addEventListener("click", () => {
     showInfoPopup("Usikkerhed", "Selv noget så hverdagsagtigt som en iPhone kan være en trigger – måske fordi den forbindes med dårlige nyheder, sociale medier eller en konstant følelse af at skulle være på.");
   });
+
+// Pop-op struktuering
+const popup = document.getElementById("popup");
+const closeBtn = document.getElementById("closePopup");
+
+closeBtn.addEventListener("click", () => {
+  popup.style.display = "none";
+});
+
+const infoPopup = document.getElementById("infoPopup");
+const infoTitle = document.getElementById("infoTitle");
+const infoText = document.getElementById("infoText");
+const closeInfoBtn = document.getElementById("closeInfoPopup");
