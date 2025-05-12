@@ -1,13 +1,12 @@
 @font-face {
     font-family: 'BagelFatOne';
     src: url('fonts/BagelFatOne-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
   }
 
-body {
+  body {
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'BagelFatOne', sans-serif;
+    background-color: grey;
   }
   
   .panel {
@@ -24,6 +23,7 @@ body {
     height: auto;
     object-fit: contain;
     margin-right: 140px;
+    align-self: flex-end;
   }
 
 /* Scroll-prikker i siden */
@@ -57,3 +57,43 @@ body {
     border: 2px solid black;
     opacity: 1;
   }
+
+  .panel {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .panel-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 60px;
+    box-sizing: border-box;
+  }
+  
+  .tekstblok h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+    color: #cceaff;
+    margin: 0;
+  }
+  
+  .gul {
+    color: #ffe87a;
+  }
+  
+  .blaa {
+    color: #b3dcff;
+  }
+  
+  .hero-img {
+    max-width: 40%;
+    height: auto;
+  }
+
+
+  
