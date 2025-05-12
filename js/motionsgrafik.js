@@ -50,3 +50,17 @@ babu.addEventListener("mouseleave", () => {
   babusound.pause();
   babusound.currentTime = 0;
 });
+
+// Afspil lyd ved hover ved sirene
+const sirene = document.getElementById("sirene");
+const babusound1 = document.getElementById("babusound1");
+
+sirene.addEventListener("mouseenter", () => {
+  babusound1.currentTime = 0;
+  babusound1.play();
+});
+
+sirene.addEventListener("mouseleave", () => {
+  babusound1.pause();
+  babusound1.currentTime = 0;
+});
