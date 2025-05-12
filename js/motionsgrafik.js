@@ -64,3 +64,9 @@ sirene.addEventListener("mouseleave", () => {
   babusound1.pause();
   babusound1.currentTime = 0;
 });
+
+
+//pop til ambulance
+sirene.addEventListener("click", () => {
+    showInfoPopup("Utryghed", "En ambulance med blink og lyd kan være en stærk trigger, især hvis man har oplevet noget traumatisk i forbindelse med sygdom eller ulykke.");
+  });
