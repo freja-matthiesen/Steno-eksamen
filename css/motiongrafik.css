@@ -185,7 +185,7 @@ body {
     opacity: 60%;
   }
   
-  .sky5 {
+.sky5 {
     animation: moveSky 5s ease-in-out infinite alternate;
     }
     
@@ -218,3 +218,54 @@ body {
     transform: translateX(50px); /* Juster hvor langt den skal bevæge sig */
     }
   }
+
+.ambulance {
+    position: absolute;
+    left: 5%;
+    top: 60%;
+    width: 20%;
+    z-index: 1;
+}
+
+.hjul1 {
+    position: absolute;
+    left: 7.5%;
+    top: 72%;
+    width: 2%;
+    z-index: 2;
+}
+  
+.hjul1 {
+    animation: spin 1s linear infinite;
+  }
+  
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+.hjul2 {
+    position: absolute;
+    left: 19.7%;
+    top: 72%;
+    width: 2%;
+    z-index: 2; 
+  }
+
+.hjul2 {
+    animation: spin 1s linear infinite;
+  }
+  
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+  } 
+  
