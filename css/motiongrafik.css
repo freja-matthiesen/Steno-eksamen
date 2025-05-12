@@ -315,4 +315,124 @@ body {
       transform: scale(1);
     }
   }
+
+.phone {
+    left: 39%;
+    top: 75%;
+    width: 4%;
+  }
+
+.phone:hover {
+    animation: wobble 1s infinite;
+  }
+  
+@keyframes wobble {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(10deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    75% {
+      transform: rotate(-10deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+.thoughts {
+    left: 50%;
+    top: 33%;
+    width: 6%;
+  }
+
+.thoughts {
+    width: 80px; 
+    transition: transform 0.3s ease-in-out;
+  }
+  
+.thoughts:hover {
+    animation: wobble 1s infinite;
+  }
+  
+@keyframes wobble {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(10deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    75% {
+      transform: rotate(-10deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+.sirene {
+    position: absolute;
+    left: 12.3%;
+    top: 59.5%;
+    width: 2%;
+    z-index: 2; 
+  }
+
+.sirene:hover {
+    animation: sirene 1s infinite;
+  }
+
+@keyframes sirene {
+    0% {
+      transform: scale(1.25);
+    }
+    25% {
+      transform: scale(1.5);
+    }
+    40% {
+      transform: scale(1.25);
+    }
+    60% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1.25);
+    }
+  }
+
+.heart {
+    left: 47%;
+    top: 65%;
+    width: 3%;
+  }
+
+.heart:hover {
+    animation: heartbeat 1s infinite;
+  }
+
+@keyframes heartbeat {
+    0% {
+      transform: scale(1.25);
+    }
+    25% {
+      transform: scale(1.5);
+    }
+    40% {
+      transform: scale(1.25);
+    }
+    60% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1.25);
+    }
+  }
+  
   
