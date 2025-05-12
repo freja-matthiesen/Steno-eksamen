@@ -70,3 +70,17 @@ sirene.addEventListener("mouseleave", () => {
 sirene.addEventListener("click", () => {
     showInfoPopup("Utryghed", "En ambulance med blink og lyd kan være en stærk trigger, især hvis man har oplevet noget traumatisk i forbindelse med sygdom eller ulykke.");
   });
+
+//lyd til tanker
+const thoughts = document.getElementById("thoughts");
+const tankelyd = document.getElementById("tankelyd");
+
+thoughts.addEventListener("mouseenter", () => {
+  tankelyd.currentTime = 0;
+  tankelyd.play();
+});
+
+thoughts.addEventListener("mouseleave", () => {
+  tankelyd.pause();
+  tankelyd.currentTime = 0;
+});
