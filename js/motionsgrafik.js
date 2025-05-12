@@ -36,4 +36,17 @@ crowd.addEventListener("mouseleave", () => {
 crowd.addEventListener("click", () => {
     showInfoPopup("Store grupper", "En stor gruppe mennesker kan føles overvældende og give en følelse af ikke at kunne overskue situationen eller miste kontrollen.");
   });
-  
+
+// Afspil lyd ved hover ved ambulancen
+const babu = document.getElementById("babu");
+const babusound = document.getElementById("babusound");
+
+babu.addEventListener("mouseenter", () => {
+  babusound.currentTime = 0;
+  babusound.play();
+});
+
+babu.addEventListener("mouseleave", () => {
+  babusound.pause();
+  babusound.currentTime = 0;
+});
