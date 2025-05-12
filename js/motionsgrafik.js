@@ -17,3 +17,17 @@ heart.addEventListener("mouseleave", () => {
 heart.addEventListener("click", () => {
     showInfoPopup("Hjertebanken", "Hjertebanken er en klassisk fysisk reaktion på angst. Når man føler sig truet eller presset, går kroppen i alarmberedskab. Hjertet begynder at slå hurtigere for at sende blod ud i kroppen – også selvom der ikke er nogen reel fare.");
   });
+
+// Afspil lyd ved hover ved gruppen
+const crowd = document.getElementById("crowd");
+const crowdtalksound = document.getElementById("crowdtalksound");
+
+crowd.addEventListener("mouseenter", () => {
+  crowdtalksound.currentTime = 0;
+  crowdtalksound.play();
+});
+
+crowd.addEventListener("mouseleave", () => {
+  crowdtalksound.pause();
+  crowdtalksound.currentTime = 0;
+});
