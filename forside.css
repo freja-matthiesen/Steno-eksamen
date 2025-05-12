@@ -31,7 +31,7 @@ body {
     z-index: 100;
   }
   
-  /* Deaktiverede prikker (hvide, mindre) */
+
   .dot {
     width: 10px;
     height: 10px;
@@ -42,7 +42,7 @@ body {
     transition: all 0.3s;
   }
   
-  /* Aktiv prik (større og sort) */
+  
   .dot.active {
     width: 16px;
     height: 16px;
