@@ -103,3 +103,9 @@ muscle.addEventListener("mouseleave", () => {
   ondtsound.pause();
   ondtsound.currentTime = 0;
 });
+
+// pop-up til muskel
+muscle.addEventListener("click", () => {
+    showInfoPopup("Ømhed i kroppen", "Ømhed i musklerne opstår ofte, når kroppen er spændt i længere tid. Mange, der kæmper med angst, spænder ubevidst i skuldre, nakke eller ryg, hvilket over tid kan føre til ømhed og ubehag");
+  });
+  
