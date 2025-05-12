@@ -89,3 +89,17 @@ thoughts.addEventListener("mouseleave", () => {
 thoughts.addEventListener("click", () => {
     showInfoPopup("Tankemylder", "Tankemylder dækker over de mange forstyrrende tanker, som kan føles svære at stoppe. Tankerne kører i ring og gør det svært at fokusere, slappe af eller falde i søvn.");
   });
+
+// Afspil lyd ved hover muskel
+const muscle = document.getElementById("muscle");
+const ondtsound = document.getElementById("ondtsound");
+
+muscle.addEventListener("mouseenter", () => {
+  ondtsound.currentTime = 0;
+  ondtsound.play();
+});
+
+muscle.addEventListener("mouseleave", () => {
+  ondtsound.pause();
+  ondtsound.currentTime = 0;
+});
