@@ -84,3 +84,8 @@ thoughts.addEventListener("mouseleave", () => {
   tankelyd.pause();
   tankelyd.currentTime = 0;
 });
+
+// pop til tankemylder
+thoughts.addEventListener("click", () => {
+    showInfoPopup("Tankemylder", "Tankemylder dækker over de mange forstyrrende tanker, som kan føles svære at stoppe. Tankerne kører i ring og gør det svært at fokusere, slappe af eller falde i søvn.");
+  });
