@@ -268,4 +268,51 @@ body {
       transform: rotate(-360deg);
     }
   } 
+
+.group {
+    left: 70%;
+    top: 54%;
+    width: 13%;
+  }
+
+.group:hover {
+    animation: hop 0.5s infinite ease-in-out;
+  }
+  
+@keyframes hop {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px); 
+    }
+  }
+
+.muscle {
+    left: 45.7%;
+    top: 92%;
+    width: 2%;
+  }
+
+.muscle:hover {
+    animation: heartbeat 1s infinite;
+  }
+
+@keyframes musclebeat {
+    0% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(1.25);
+    }
+    40% {
+      transform: scale(1);
+    }
+    60% {
+      transform: scale(1.25);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
   
