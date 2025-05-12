@@ -111,7 +111,7 @@ body {
     transform: translateX(50px);
       }
     100% {
-    transform: translateX(0px); /* Juster hvor langt den skal bevæge sig */
+    transform: translateX(0px); 
       }
     }
   
@@ -132,11 +132,11 @@ body {
     transform: translateX(0);
       }
     100% {
-    transform: translateX(50px); /* Juster hvor langt den skal bevæge sig */
+    transform: translateX(50px); 
       }
     }
   
-  sky3 {
+.sky3 {
     left: 23%;
     top: 12%;
     width: 16%;
@@ -148,13 +148,13 @@ body {
     }
     
 @keyframes moveSky {
-    0% {
-    transform: translateX(0);
-      }
-    100% {
-    transform: translateX(50px); /* Juster hvor langt den skal bevæge sig */
-      }
-    }
+        0% {
+        transform: translateX(0);
+          }
+        100% {
+        transform: translateX(50px);
+          }
+}
   
 .sky4 {
     left: 40%;
@@ -173,7 +173,7 @@ body {
     transform: translateX(0);
       }
     100% {
-    transform: translateX(50px); /* Juster hvor langt den skal bevæge sig */
+    transform: translateX(50px);
       }
     }
   
@@ -194,7 +194,7 @@ body {
     transform: translateX(0);
       }
     100% {
-    transform: translateX(50px); /* Juster hvor langt den skal bevæge sig */
+    transform: translateX(50px); 
       }
     }
   
@@ -215,7 +215,7 @@ body {
     transform: translateX(0);
     }
     100% {
-    transform: translateX(50px); /* Juster hvor langt den skal bevæge sig */
+    transform: translateX(50px); 
     }
   }
 
