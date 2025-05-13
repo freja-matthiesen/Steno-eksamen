@@ -13,12 +13,32 @@
     color: #ffffff;
     text-align: center;
     background-image: radial-gradient(#2a1fa2 20%, transparent 20%),
-                      radial-gradient(#2a1fa2 20%, transparent 20%);
+     radial-gradient(#2a1fa2 20%, transparent 20%);
     background-size: 50px 50px;
   }
-  
+
 h1 {
-    font-size: 3em;
+    font-size: 5rem;
     margin-top: 60px;
   }
-  
+
+h2 {
+        font-size: 2.5rem;
+        margin-top: 20px;
+    }
+
+h3{
+    font-size: 2rem;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+    margin-top: 150px
+}
+.hotline {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+    font-size: 22px;
+}
