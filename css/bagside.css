@@ -46,8 +46,14 @@ h3 {
     margin-left: 40px;
     font-size: 22px;
 }
-
-
+.nummer {
+    display: inline-block;
+    margin-left: 10rem; 
+    align-items: baseline; 
+  }
+  .nummer1 {
+    transform: translateX(220px); 
+  }
 
 #visitkort-knap {
     margin-top: 50px;
