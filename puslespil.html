@@ -7,46 +7,46 @@
     <link rel="stylesheet" href="/css/puslespil.css">
 </head>
 <body>
-    <section class="drag" id="drag">
+    <section class="drag" id="drag"> <!-- Start container med brikker -->
         <article class="dragBox">
-            <section class="images" draggable="true" ondragstart="drag(event)" id="block1" style="--img:url('img-puslespil/1.png');"></section>
+            <section class="images" draggable="true" ondragstart="drag(event)" id="block1" style="--img:url('/img-puslespil/1.png');"></section>
         </article>
 
         <article class="dragBox">
-            <section class="images" draggable="true" ondragstart="drag(event)" id="block2" style="--img:url('img-puslespil/2.png');"></section>
+            <section class="images" draggable="true" ondragstart="drag(event)" id="block2" style="--img:url('/img-puslespil/2.png');"></section>
         </article>
 
         <article class="dragBox">
-            <section class="images" draggable="true" ondragstart="drag(event)" id="block3" style="--img:url('img-puslespil/3.png');"></section>
+            <section class="images" draggable="true" ondragstart="drag(event)" id="block3" style="--img:url('/img-puslespil/3.png');"></section>
         </article>
 
         <article class="dragBox">
-            <section class="images" draggable="true" ondragstart="drag(event)" id="block4" style="--img:url('img-puslespil/4.png');"></section>
+            <section class="images" draggable="true" ondragstart="drag(event)" id="block4" style="--img:url('/img-puslespil/4.png');"></section>
         </article>
 
         <article class="dragBox">
-            <section class="images" draggable="true" ondragstart="drag(event)" id="block5" style="--img:url('img-puslespil/5.png');"></section>
+            <section class="images" draggable="true" ondragstart="drag(event)" id="block5" style="--img:url('/img-puslespil/5.png');"></section>
         </article>
 
         <article class="dragBox">
-            <section class="images" draggable="true" ondragstart="drag(event)" id="block6" style="--img:url('img-puslespil/6.png');"></section>
+            <section class="images" draggable="true" ondragstart="drag(event)" id="block6" style="--img:url('/img-puslespil/6.png');"></section>
         </article>
 
         <article class="dragBox">
-            <section class="images" draggable="true" ondragstart="drag(event)" id="block7" style="--img:url('img-puslespil/7.png');"></section>
+            <section class="images" draggable="true" ondragstart="drag(event)" id="block7" style="--img:url('/img-puslespil/7.png');"></section>
         </article>
 
         <article class="dragBox">
-            <section class="images" draggable="true" ondragstart="drag(event)" id="block8" style="--img:url('img-puslespil/8.png');"></section>
+            <section class="images" draggable="true" ondragstart="drag(event)" id="block8" style="--img:url('/img-puslespil/8.png');"></section>
         </article>
 
         <article class="dragBox">
-            <section class="images" draggable="true" ondragstart="drag(event)" id="block9" style="--img:url('img-puslespil/9.png');"></section>
+            <section class="images" draggable="true" ondragstart="drag(event)" id="block9" style="--img:url('/img-puslespil/9.png');"></section>
         </article>
 
     </section>
 
-    <section class="board">
+    <section class="board"> <!-- Container hvor brikkerne placeres -->
         <aside class="dropBox" id="img1" ondrop="drop(event)" ondragover="allowDrop(event)"></aside>
         <aside class="dropBox" id="img2" ondrop="drop(event)" ondragover="allowDrop(event)"></aside>
         <aside class="dropBox" id="img3" ondrop="drop(event)" ondragover="allowDrop(event)"></aside>
@@ -60,6 +60,14 @@
 
     <button class="reset" onclick="window.location.reload();"> Genstart </button>
 
+    <!-- PopUp kommer frem, når puslespillet er samlet korrekt -->
+    <section id="customAlert" class="modal">
+        <article class="modal-content">
+            <p id="alertMessage"></p>
+            <img id="modalImage" src="/img-puslespil/samlet.png" alt="Alert Image">
+            <button id="closeAlert" class="closeBtn">OK</button>
+        </article>
+    </section>
 
 
     <script src="/js/puslespil.js"> </script>
