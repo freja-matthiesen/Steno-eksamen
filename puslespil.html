@@ -58,14 +58,25 @@
         <aside class="dropBox" id="img9" ondrop="drop(event)" ondragover="allowDrop(event)"></aside>
     </section>
 
-    <button class="reset" onclick="window.location.reload();"> Genstart </button>
+    <section>
+        <button class="reset" onclick="window.location.reload();"> Genstart </button>
+        <a href="">
+            <img src="" alt="">
+        </a>
+    </section>
+   
 
     <!-- PopUp kommer frem, når puslespillet er samlet korrekt -->
     <section id="customAlert" class="modal">
         <article class="modal-content">
             <p id="alertMessage"></p>
             <img id="modalImage" src="/img-puslespil/samlet.png" alt="Alert Image">
-            <button id="closeAlert" class="closeBtn">OK</button>
+            <section class="buttons">
+                <button id="closeAlert" class="closeBtn">OK</button>
+                <a class="next" href="/quiz.html">
+                    <p id="next"> Videre </p>
+                </a>
+            </section>  
         </article>
     </section>
 

@@ -78,8 +78,19 @@ function checkPuzzleCompletion() {
 
         // Hvis puslespillet er samlet korrekt vises en alert
         if (allCorrect) {
-            showCustomAlert("Billedet viser de fire mest alminderlige angst typer. Herunder seperationsangst, socialangst, generaliseret angst og fobiangst.", "img/samlet.png", );
+            showCustomAlert("Tillykke du har samlet puslespillet korrekt", "img/samlet.png" );
         }
     }
     
+}
+
+function showCustomAlert(message) { // Viser en PopUp med tekst og et billede, når puslespillet er samlet korrekt.
+    
+    document.getElementById('alertMessage').textContent = message;
+
+    document.getElementById('customAlert').style.display = "flex";
+
+    document.getElementById('closeAlert').onclick = function() { //lukker for PopUp'en
+        document.getElementById('customAlert').style.display = "none";
+    }
 }
