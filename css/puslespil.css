@@ -38,22 +38,6 @@ body {
     background-size: cover;
 }
 
-.reset  {
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px 25px;
-    border: none;
-    background: #bfecfd;
-    color: #2f363e;
-    font-size: 1em;
-    font-weight: 700;
-    cursor: pointer;
-    text-transform: uppercase;
-    border-radius: 10px;
-}
-
 .board {
     position: relative;
     display: grid;
@@ -144,5 +128,39 @@ body {
     color: white;
     display: inline-block; 
 }
-    
 
+.genstartOgSkip {
+    position: absolute;
+    bottom: 30px;  
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    gap: 20px;  
+    justify-content: center;
+    align-items: center; 
+}
+
+
+.genstartOgSkip img {
+    width: 100px;  
+    height: 60px;
+
+    cursor: pointer;
+    margin-top: 150px;
+}
+
+
+.reset  {
+    transform: translateX(-50%);
+    padding: 10px 25px;
+    border: none;
+    background: #bfecfd;
+    color: #2f363e;
+    font-size: 1em;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 10px;
+    margin-top: 150px;
+}

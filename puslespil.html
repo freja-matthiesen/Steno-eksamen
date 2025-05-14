@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/css/puslespil.css">
 </head>
 <body>
+
     <section class="drag" id="drag"> <!-- Start container med brikker -->
         <article class="dragBox">
             <section class="images" draggable="true" ondragstart="drag(event)" id="block1" style="--img:url('/img-puslespil/1.png');"></section>
@@ -58,10 +59,10 @@
         <aside class="dropBox" id="img9" ondrop="drop(event)" ondragover="allowDrop(event)"></aside>
     </section>
 
-    <section>
+    <section class="genstartOgSkip">
         <button class="reset" onclick="window.location.reload();"> Genstart </button>
-        <a href="">
-            <img src="" alt="">
+        <a href="/quiz.html">
+            <img src="/img/skip.png" alt="skip">
         </a>
     </section>
    
