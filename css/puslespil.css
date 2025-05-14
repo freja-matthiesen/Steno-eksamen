@@ -87,7 +87,6 @@ body {
     border-radius: 5px;
     font-size: 16px;
     margin-bottom: 5px;
-    width: 20%;
 }
 
 .closeBtn:hover {
@@ -131,7 +130,7 @@ body {
 
 .genstartOgSkip {
     position: absolute;
-    bottom: 30px;  
+    bottom: 10px;  
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -152,7 +151,6 @@ body {
 
 
 .reset  {
-    transform: translateX(-50%);
     padding: 10px 25px;
     border: none;
     background: #bfecfd;
