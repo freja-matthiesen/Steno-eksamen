@@ -40,6 +40,7 @@ h3 {
         margin-left: -68rem; 
         
 }  
+/* Styling af Hotline- telefon nr  */
 .hotline {
     margin-top: 35px;
     display: flex;
@@ -71,40 +72,31 @@ h3 {
   
   .wave-left {
     left: 0;
-    background-image: url('../img/bølge.png'); /* Venstre bølge */
+    background-image: url('../img/bølge.png'); 
   }
   
   .wave-right {
     right: 0;
-    background-image: url('../img/bølge.png'); /* Højre bølge */
+    background-image: url('../img/bølge.png'); 
     transform: scaleX(-1); /* Spejlvender bølgen horisontalt */
   }
   
-  .star {
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    background-image: url('../img/stjerne.png'); 
-    background-size: contain;
-    background-repeat: no-repeat;
-    opacity: 0.8;
-  }
-
   @keyframes floatSideways {
-    0%   { transform: translateX(0); }
-    50%  { transform: translateX(10px); }
-    100% { transform: translateX(0); }
+    0%   { transform: translateX(0); } /* startposition.-forskyder ikke */
+    50%  { transform: translateX(10px); } /* Halvvejs – bevæger sig 10px til højre */
+    100% { transform: translateX(0); } /* Slutter tilbage ved startposition */
   }
   
-  .star {
+  .star { /* Definerer udseendet og placeringen af hver stjerne på siden */
     position: absolute;
     width: 80px;
     height: 80px;
     background-image: url('../img/stjerne.png');
-    background-size: contain;
+    background-size: contain; /* Sørger for at billedet skaleres så det passer i boksen uden at beskæres */
     background-repeat: no-repeat;
-    opacity: 0.8;
-    animation: floatSideways 5s ease-in-out infinite;
+    opacity: 0.8; /* Gør stjernen lidt gennemsigtig for en bedre effekt */
+    animation: floatSideways 5s ease-in-out infinite; 
+    /* Animation der får stjernen til at bevæge sig fra side til side i en loop */
   }
 
 
@@ -127,7 +119,7 @@ h3 {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   }
   
-  /* Popup med billeder */
+  /* Styling af Popup med billeder */
   #visitkort-popup {
     display: none;
     position: fixed;
@@ -148,7 +140,7 @@ h3 {
     display: block;
     border-radius: 10px;
   }
-  
+  /* Styling af Popup knap */
   #visitkort-popup button {
     margin-top: 15px;
     padding: 10px 20px;
@@ -158,7 +150,7 @@ h3 {
     border-radius: 10px;
     cursor: pointer;
   }
-  /* Klikbar boks */
+  /* Styling af info boks */
 #info-boks {
     background-color: #ffffff;
     color: #0d0877;
@@ -176,7 +168,7 @@ h3 {
     font-size: 1.3rem;
   }
   
-  /* Popup info */
+  /* Styling af Information i popup  */
   #info-popup {
     display: none;
     position: fixed;
