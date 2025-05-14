@@ -13,6 +13,7 @@
     color: #ffffff;
     text-align: center;
     background-size: 50px 50px;
+    overflow: hidden;
   }
 
 h1 {
@@ -52,6 +53,53 @@ h3 {
   .nummer1 {
     transform: translateX(220px); 
   }
+
+  .wave-left,
+  .wave-right {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    opacity: 0.4;
+    pointer-events: none;
+  }
+  
+  .wave-left {
+    left: 0;
+    background-image: url('../img/bølge.png'); /* Venstre bølge */
+  }
+  
+  .wave-right {
+    right: 0;
+    background-image: url('../img/bølge.png'); /* Højre bølge */
+    transform: scaleX(-1); /* Spejlvender bølgen horisontalt */
+  }
+  .stars {
+    position: fixed;
+    top: 0rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  .star {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-image: url('../img/stjerne.png'); /* Sti til din stjerne */
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+  }
+  h1, h2, h3, .hotline, #visitkort-knap, #visitkort-popup {
+  position: relative;
+  z-index: 1;
+}
 
 #visitkort-knap {
     margin-top: 50px;
@@ -98,3 +146,8 @@ h3 {
     border-radius: 10px;
     cursor: pointer;
   }
+  
+
+
+
+
