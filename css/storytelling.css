@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'BagelFatOne';
+    src: url('../fonts/BagelFatOne-Regular.ttf') format('truetype');
+  }
+
+:root{
+    --darkblue:#0F038F;
+    --blue:#1000F7;
+    --lightblue:#BFECFD;
+    --orange:#FF982A;
+    --yellow:#FCF084;
+    --lightgreen:#74B779;
+    --grey:#353535;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0d0877;
+  }
+
+
+  h1 {
+    font-size: 5rem;
+    font-family: 'BagelFatOne', sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.5s;
+  }
+
+  h2 {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+    
+  }
+
+   
+  #start-knap {
+    background-color: white;
+    color:var(--darkblue);
+    font-family: 'BagelFatOne', sans-serif;
+    font-size: 2rem;
+    padding: 20px 40px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 2.5s;
+  }
+
+    #start-knap:hover {
+        background-color: var(--blue);
+        color: white;
+    }
+
+   
+    .knapogimg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    img {
+        margin-left: 800px;
+        margin-top: -100px;
+        opacity: 0;
+        animation:  moveIn 1s forwards;
+        animation-delay: 2.5s;
+    }
+
+    @keyframes fadeIn {
+        from {
+        opacity: 0;
+        }
+        to {
+        opacity: 1;
+        }
+    }
+
+    @keyframes moveIn {
+        from {
+            transform: translateY(100px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
