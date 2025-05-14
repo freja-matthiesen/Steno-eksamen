@@ -77,25 +77,35 @@ h3 {
     background-image: url('../img/bølge.png'); /* Højre bølge */
     transform: scaleX(-1); /* Spejlvender bølgen horisontalt */
   }
-  .stars {
-    position: fixed;
-    top: 0rem;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    pointer-events: none;
-  }
   
   .star {
     position: absolute;
-    width: 60px;
-    height: 60px;
-    background-image: url('../img/stjerne.png'); /* Sti til din stjerne */
+    width: 80px;
+    height: 80px;
+    background-image: url('../img/stjerne.png'); 
     background-size: contain;
     background-repeat: no-repeat;
     opacity: 0.8;
   }
+
+  @keyframes floatSideways {
+    0%   { transform: translateX(0); }
+    50%  { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+  }
+  
+  .star {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-image: url('../img/stjerne.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    animation: floatSideways 5s ease-in-out infinite;
+  }
+
+
   h1, h2, h3, .hotline, #visitkort-knap, #visitkort-popup {
   position: relative;
   z-index: 1;
@@ -161,6 +171,7 @@ h3 {
     right: 25%;
     z-index: 1;
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    font-size: 1.3rem;
   }
   
   /* Popup info */
