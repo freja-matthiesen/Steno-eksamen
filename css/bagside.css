@@ -13,6 +13,7 @@
     color: #ffffff;
     text-align: center;
     background-size: 50px 50px;
+    overflow: hidden;
   }
 
 h1 {
@@ -52,6 +53,53 @@ h3 {
   .nummer1 {
     transform: translateX(220px); 
   }
+
+  .wave-left,
+  .wave-right {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    opacity: 0.4;
+    pointer-events: none;
+  }
+  
+  .wave-left {
+    left: 0;
+    background-image: url('../img/bølge.png'); /* Venstre bølge */
+  }
+  
+  .wave-right {
+    right: 0;
+    background-image: url('../img/bølge.png'); /* Højre bølge */
+    transform: scaleX(-1); /* Spejlvender bølgen horisontalt */
+  }
+  .stars {
+    position: fixed;
+    top: 0rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  .star {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-image: url('../img/stjerne.png'); /* Sti til din stjerne */
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+  }
+  h1, h2, h3, .hotline, #visitkort-knap, #visitkort-popup {
+  position: relative;
+  z-index: 1;
+}
 
 #visitkort-knap {
     margin-top: 50px;
@@ -98,3 +146,70 @@ h3 {
     border-radius: 10px;
     cursor: pointer;
   }
+  /* Klikbar boks */
+#info-boks {
+    background-color: #ffffff;
+    color: #0d0877;
+    padding: 20px;
+    border-radius: 20px;
+    width: 300px;
+    text-align: center;
+    font-family: 'BagelFatOne', sans-serif;
+    cursor: pointer;
+    position: absolute;
+    top: 55%; /* justér efter behov */
+    right: 25%;
+    z-index: 1;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+  
+  /* Popup info */
+  #info-popup {
+    display: none;
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    color: #0d0877;
+    padding: 25px;
+    border-radius: 20px;
+    max-width: 400px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+    z-index: 9999;
+    text-align: left;
+    font-family: Arial, sans-serif;
+  }
+  
+  #info-popup h4 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+  
+  #info-popup button {
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: #0d0877;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  #info-popup {
+    line-height: 1.7; /* Giver mere luft mellem linjerne */
+  }
+  
+  #info-popup ul {
+    padding-left: 20px;
+    margin: 0;
+  }
+  
+  #info-popup li {
+    margin-bottom: 16px; /* Luft mellem hvert punkt */
+    font-size: 1rem;
+  }
+
+
+
+

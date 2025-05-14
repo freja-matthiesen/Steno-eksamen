@@ -28,19 +28,59 @@
         <span class="nummer">39 25 25 25</span>
       </article>
   
-    <button id="visitkort-knap" onclick="toggleVisitkort()">Se vores visitkort</button>
-  </section>
+    
+    
+<article class="wave-left"></article>
+<article class="wave-right"></article>
+
+<!-- Stjerner i baggrunden -->
+<section class="stars">
+  <div class="star" style="top: 5%; left: 10%;"></div>
+  <div class="star" style="top: 15%; left: 60%;"></div>
+  <div class="star" style="top: 30%; left: 20%;"></div>
+  <div class="star" style="top: 50%; left: 80%;"></div>
+  <div class="star" style="top: 70%; left: 40%;"></div>
+  <div class="star" style="top: 85%; left: 90%;"></div>
+</section>
+
+</section>
+
 
   
 
-   <!-- Popup med visitkort -->
-   <section id="visitkort-popup">
-     <img src="img/visitkort.png" alt="Forsidekort">
-     <img src="img/visitkortbagside.png" alt="Bagsidekort">
-     <button onclick="toggleVisitkort()">Luk</button>
-   </section>
+<!-- Knap til at åbne popup -->
+<button id="visitkort-knap" onclick="toggleVisitkort()">Se vores visitkort</button>
 
+<!-- Popup – SKAL stå til sidst i <body> -->
+<section id="visitkort-popup">
+  <img src="img/visitkort.png" alt="Forsidekort">
+  <img src="img/visitkortbagside.png" alt="Bagsidekort">
+  <button onclick="toggleVisitkort()">Luk</button>
+</section>
 
+<section id="info-boks" onclick="toggleInfo()">
+    <p>Klik her for at læse om hjælpen</p>
+  </section>
+  
+  <section id="info-popup">
+    <h4>Hvem af dem skal jeg ringe til? </h4>
+    <ul>
+        <li>
+          <strong>Børnetelefonen:</strong> Hvis du går rundt med noget på hjerte, stort som småt, kan du altid ringe. <br>
+          Intet problem er for lille eller for stort.
+        </li>
+        <li>
+          <strong>Livslinien:</strong> Har du en svær periode i dit liv?<br>
+          Krisen kan føre til selvmordstanker eller selvskade – tal med nogen, der kan hjælpe.
+        </li>
+        <li>
+          <strong>Psykiatrifonden:</strong> Her kan du altid få rådgivning,<br>
+          om det er stort eller småt. <br>
+          Vi sidder klar til at lytte til dig, når du har brug for det.
+        </li>
+      </ul>
+    <button onclick="toggleInfo()">Luk</button>
+  </section>
 
 <script src="js/bagside.js"></script>
 </body>
