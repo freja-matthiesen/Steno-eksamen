@@ -12,8 +12,6 @@
     font-family: 'Comic Sans MS', cursive, sans-serif;
     color: #ffffff;
     text-align: center;
-    background-image: radial-gradient(#2a1fa2 20%, transparent 20%),
-     radial-gradient(#2a1fa2 20%, transparent 20%);
     background-size: 50px 50px;
   }
 
