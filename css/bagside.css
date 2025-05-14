@@ -146,7 +146,69 @@ h3 {
     border-radius: 10px;
     cursor: pointer;
   }
+  /* Klikbar boks */
+#info-boks {
+    background-color: #ffffff;
+    color: #0d0877;
+    padding: 20px;
+    border-radius: 20px;
+    width: 300px;
+    text-align: center;
+    font-family: 'BagelFatOne', sans-serif;
+    cursor: pointer;
+    position: absolute;
+    top: 55%; /* justér efter behov */
+    right: 25%;
+    z-index: 1;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
   
+  /* Popup info */
+  #info-popup {
+    display: none;
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    color: #0d0877;
+    padding: 25px;
+    border-radius: 20px;
+    max-width: 400px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+    z-index: 9999;
+    text-align: left;
+    font-family: Arial, sans-serif;
+  }
+  
+  #info-popup h4 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+  
+  #info-popup button {
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: #0d0877;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  #info-popup {
+    line-height: 1.7; /* Giver mere luft mellem linjerne */
+  }
+  
+  #info-popup ul {
+    padding-left: 20px;
+    margin: 0;
+  }
+  
+  #info-popup li {
+    margin-bottom: 16px; /* Luft mellem hvert punkt */
+    font-size: 1rem;
+  }
 
 
 
