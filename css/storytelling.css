@@ -173,3 +173,46 @@ h1, p {
       /* Animation der får stjernen til at bevæge sig fra side til side i en loop */
     }
 
+    /*herunder starter css styling af storytelling*/
+
+    #spilside {
+        display: none;
+    }
+
+    #valget {
+        display: none;
+    }
+
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.5s;
+    z-index: -1;
+}
+
+#valget {
+    z-index: 100;
+    margin-top: -500px;
+}
+
+#valg1, #valg2 {
+    background-color: var(--orange);
+    color: white;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 40px 40px;
+    border-radius: 10px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+    margin-bottom: 50px;
+    margin-left: 250px;
+}
