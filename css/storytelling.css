@@ -3,6 +3,11 @@
     src: url('../fonts/BagelFatOne-Regular.ttf') format('truetype');
   }
 
+@font-face {
+    font-family: 'Big Shoulders Display';
+    src: url('../fonts/BigShoulders-VariableFont_opsz\,wght.ttf') format('truetype');
+  }
+
 :root{
     --darkblue:#0F038F;
     --blue:#1000F7;
@@ -20,7 +25,13 @@ body {
     background-color: #0d0877;
   }
 
-
+h1, p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
   h1 {
     font-size: 5rem;
     font-family: 'BagelFatOne', sans-serif;
@@ -32,11 +43,19 @@ body {
     animation-delay: 0.5s;
   }
 
+  p {
+    color: var(--yellow); 
+    margin-left: 20px;
+  }
+
   h2 {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: 'Big Shoulders Display', sans-serif;
     color: white;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3rem;
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
     opacity: 0;
     animation: fadeIn 1s forwards;
     animation-delay: 1s;
@@ -47,8 +66,9 @@ body {
   #start-knap {
     background-color: white;
     color:var(--darkblue);
-    font-family: 'BagelFatOne', sans-serif;
-    font-size: 2rem;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
     padding: 20px 40px;
     border-radius: 10px;
     border: none;
