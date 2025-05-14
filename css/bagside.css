@@ -12,21 +12,22 @@
     font-family: 'Comic Sans MS', cursive, sans-serif;
     color: #ffffff;
     text-align: center;
-    background-image: radial-gradient(#2a1fa2 20%, transparent 20%),
-     radial-gradient(#2a1fa2 20%, transparent 20%);
     background-size: 50px 50px;
+    overflow: hidden;
   }
 
 h1 {
     font-size: 5rem;
     margin-top: 60px;
     font-family: 'BagelFatOne', sans-serif;
+    color: #b3dcff;
   }
 
 h2 {
         font-size: 2.5rem;
         margin-top: 20px;
         font-family: 'BagelFatOne', sans-serif;
+        color: #b3dcff;
     }
 
 h3 {
@@ -39,6 +40,7 @@ h3 {
         margin-left: -68rem; 
         
 }  
+/* Styling af Hotline- telefon nr  */
 .hotline {
     margin-top: 35px;
     display: flex;
@@ -55,6 +57,54 @@ h3 {
     transform: translateX(220px); 
   }
 
+  .wave-left,
+  .wave-right {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+    opacity: 0.4;
+    pointer-events: none;
+  }
+  
+  .wave-left {
+    left: 0;
+    background-image: url('../img/bølge.png'); 
+  }
+  
+  .wave-right {
+    right: 0;
+    background-image: url('../img/bølge.png'); 
+    transform: scaleX(-1); /* Spejlvender bølgen horisontalt */
+  }
+  
+  @keyframes floatSideways {
+    0%   { transform: translateX(0); } /* startposition.-forskyder ikke */
+    50%  { transform: translateX(10px); } /* Halvvejs – bevæger sig 10px til højre */
+    100% { transform: translateX(0); } /* Slutter tilbage ved startposition */
+  }
+  
+  .star { /* Definerer udseendet og placeringen af hver stjerne på siden */
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-image: url('../img/stjerne.png');
+    background-size: contain; /* Sørger for at billedet skaleres så det passer i boksen uden at beskæres */
+    background-repeat: no-repeat;
+    opacity: 0.8; /* Gør stjernen lidt gennemsigtig for en bedre effekt */
+    animation: floatSideways 5s ease-in-out infinite; 
+    /* Animation der får stjernen til at bevæge sig fra side til side i en loop */
+  }
+
+
+  h1, h2, h3, .hotline, #visitkort-knap, #visitkort-popup {
+  position: relative;
+  z-index: 1;
+}
+
 #visitkort-knap {
     margin-top: 50px;
     margin-right: 70rem;
@@ -69,7 +119,7 @@ h3 {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   }
   
-  /* Popup med billeder */
+  /* Styling af Popup med billeder */
   #visitkort-popup {
     display: none;
     position: fixed;
@@ -90,7 +140,7 @@ h3 {
     display: block;
     border-radius: 10px;
   }
-  
+  /* Styling af Popup knap */
   #visitkort-popup button {
     margin-top: 15px;
     padding: 10px 20px;
@@ -100,3 +150,71 @@ h3 {
     border-radius: 10px;
     cursor: pointer;
   }
+  /* Styling af info boks */
+#info-boks {
+    background-color: #ffffff;
+    color: #0d0877;
+    padding: 20px;
+    border-radius: 20px;
+    width: 300px;
+    text-align: center;
+    font-family: 'BagelFatOne', sans-serif;
+    cursor: pointer;
+    position: absolute;
+    top: 55%; /* justér efter behov */
+    right: 25%;
+    z-index: 1;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    font-size: 1.3rem;
+  }
+  
+  /* Styling af Information i popup  */
+  #info-popup {
+    display: none;
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    color: #0d0877;
+    padding: 25px;
+    border-radius: 20px;
+    max-width: 400px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+    z-index: 9999;
+    text-align: left;
+    font-family: Arial, sans-serif;
+  }
+  
+  #info-popup h4 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+  
+  #info-popup button {
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: #0d0877;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  #info-popup {
+    line-height: 1.7; /* Giver mere luft mellem linjerne */
+  }
+  
+  #info-popup ul {
+    padding-left: 20px;
+    margin: 0;
+  }
+  
+  #info-popup li {
+    margin-bottom: 16px; /* Luft mellem hvert punkt */
+    font-size: 1rem;
+  }
+
+
+
+
