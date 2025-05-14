@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #2f363e ;
+}
+
+.drag {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 320px;
+    gap: 10px;
+    cursor: grab;
+}
+
+.drag .dragBox {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: #0003;
+}
+
+.images {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: var(--img);
+    background-size: cover;
+}
+
+.reset  {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 25px;
+    border: none;
+    background: #bfecfd;
+    color: #2f363e;
+    font-size: 1em;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+.board {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5px;
+    margin-left: 5rem;
+}
+
+.dropBox {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: #0003;
+}
