@@ -5,95 +5,71 @@
   font-style: normal;
 }
 
-  body {
-    margin: 0;
-    font-family: 'BagelFatOne';
-    background-color: grey;
-  }
-  
-  .panel {
-    height: 100vh;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    background-color: grey;
-    padding: 20px;
-  }
-  
-  .hero-img {
-    max-height: 100vh;
-    object-fit: cover;
-    align-self: flex-end;
-  }
+body {
+  margin: 0;
+  background-color: #0f0f61;
+  font-family: 'Comic Sans MS', sans-serif;
+}
 
-/* Scroll-prikker i siden */
-.dot-nav {
-    position: fixed;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    z-index: 100;
-  }
-  
+.panel {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .dot {
-    width: 10px;
-    height: 10px;
-    background-color: white;
-    border: 2px solid black;
-    border-radius: 50%;
-    opacity: 0.7;
-    transition: all 0.3s;
-  }
-  
-  
-  .dot.active {
-    width: 16px;
-    height: 16px;
-    background-color: black;
-    border: 2px solid black;
-    opacity: 1;
-  }
+.panel-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+}
 
-  .panel {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .panel-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
-    padding: 60px;
-    box-sizing: border-box;
-  }
-  
-  .tekstblok h1 {
-    font-size: 4rem;
-    line-height: 1.2;
-    color: #cceaff;
-    margin: 0;
-  }
-  
-  .gul {
-    color: #ffe87a;
-  }
-  
-  .blaa {
-    color: #b3dcff;
-  }
-  
-  .hero-img {
-    max-width: 40%;
-    height: auto;
-  }
+.tekstblok h1 {
+  font-size: 3rem;
+  color: #cceaff;
+  font-family: 'BagelFatOne', sans-serif;
+}
 
+.gul {
+  color: #ffe87a;
+}
 
+.blaa {
+  color: #b3dcff;
+}
+
+.stor {
+  font-size: 4rem;
+}
+
+.illustration {
+  position: relative;
+  width: 50%;
+}
+
+.hoved {
+  width: 100%;
+}
+
+.pige {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(0); /* Startposition */
+  transition: transform 0.1s ease-out;
+  width: 60px;
+}
+.pige {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(0);
+  transition: transform 0.5s ease-out;
+}
+
+.pige.move-up {
+  transform: translateX(-50%) translateY(-300px); /* eller hvor højt du vil */
+}
   

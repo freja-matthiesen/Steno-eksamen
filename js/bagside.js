@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 function toggleVisitkort() {
     const popup = document.getElementById("visitkort-popup");
  // Finder HTML-elementet med id "visitkort-popup"
