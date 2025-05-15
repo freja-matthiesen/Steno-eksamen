@@ -12,4 +12,9 @@ startKnap.addEventListener("click", function () {
   boksKnap.style.display = "none";
   h2.style.display = "none";
     video.play();
+
+    video.onended = function () {
+        window.location.href = "storytelling.html";
+    };
+
 });
