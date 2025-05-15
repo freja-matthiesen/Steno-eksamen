@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'BagelFatOne';
+    src: url('../fonts/BagelFatOne-Regular.ttf') format('truetype');
+  }
+
+@font-face {
+    font-family: 'Big Shoulders Display';
+    src: url('../fonts/BigShoulders-VariableFont_opsz\,wght.ttf') format('truetype');
+  }
+
+:root{
+    --darkblue:#0F038F;
+    --blue:#1000F7;
+    --lightblue:#BFECFD;
+    --orange:#FF982A;
+    --yellow:#FCF084;
+    --lightgreen:#74B779;
+    --grey:#353535;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0d0877;
+  }
+
+#tunnel video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+h2 {
+    font-family: 'BagelFatOne', sans-serif;
+    color:white;
+    text-shadow: #1000F7;
+    text-align: center;
+    font-size: 6rem;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+}
+
+#boks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 100px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px 40px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1.5s;
+}
+
+#boks p {
+    color: var(--darkblue);
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 2s;
+}
+
+#boks button {
+    background-color: var(--darkblue);
+    color: white;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 20px 40px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 2s;
+}
+
+@keyframes fadeIn {
+    from {
+    opacity: 0;
+    }
+    to {
+    opacity: 1;
+    }
+}
