@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/css/puslespil.css">
 </head>
 <body>
+
     <section class="drag" id="drag"> <!-- Start container med brikker -->
         <article class="dragBox">
             <section class="images" draggable="true" ondragstart="drag(event)" id="block1" style="--img:url('/img-puslespil/1.png');"></section>
@@ -58,14 +59,28 @@
         <aside class="dropBox" id="img9" ondrop="drop(event)" ondragover="allowDrop(event)"></aside>
     </section>
 
-    <button class="reset" onclick="window.location.reload();"> Genstart </button>
+    <section class="genstartOgSkip">
+        <a href="/motionsgrafik.html">
+            <img src="/img/tilbage.png" alt="tilbage">
+        </a>
+        <button class="reset" onclick="window.location.reload();"> Genstart </button>
+        <a href="/quiz.html">
+            <img src="/img/skip.png" alt="skip">
+        </a>
+    </section>
+   
 
     <!-- PopUp kommer frem, når puslespillet er samlet korrekt -->
     <section id="customAlert" class="modal">
         <article class="modal-content">
             <p id="alertMessage"></p>
             <img id="modalImage" src="/img-puslespil/samlet.png" alt="Alert Image">
-            <button id="closeAlert" class="closeBtn">OK</button>
+            <section class="buttons">
+                <button id="closeAlert" class="closeBtn">Prøv igen</button>
+                <a class="next" href="/quiz.html">
+                    <p id="next"> Videre </p>
+                </a>
+            </section>  
         </article>
     </section>
 
