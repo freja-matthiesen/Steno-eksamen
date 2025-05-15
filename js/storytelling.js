@@ -49,7 +49,12 @@ function afspilScene(sceneNavn) {
     if (data.valg[0] === "slut" && data.valg[1] === "slut") {
       afspilScene("slut");
     } else if (data.valg.length === 2) {
-      valgMuligheder.style.display = "block";
+      valgMuligheder.style.display = "flex";
+      valgMuligheder.style.flexDirection = "column";
+      valgMuligheder.style.justifyContent = "center";
+      valgMuligheder.style.alignItems = "center";
+      valgMuligheder.style.marginLeft = "20px";
+      valgMuligheder.style.marginRight = "20px";
       valg1.textContent = data.tekst[0];
       valg2.textContent = data.tekst[1];
 
