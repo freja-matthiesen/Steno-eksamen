@@ -27,9 +27,12 @@ body {
 }
 
 .tekstblok h1 {
-  font-size: 3rem;
+  font-family: 'BagelFatOne', cursive;
+  font-size: 5rem;
+  line-height: 1.3;
   color: #cceaff;
-  font-family: 'BagelFatOne', sans-serif;
+  margin: 0;
+  text-align: left;
 }
 
 .gul {
@@ -38,11 +41,17 @@ body {
 
 .blaa {
   color: #b3dcff;
+  display: inline-block;
+
 }
 
 .stor {
-  font-size: 4rem;
+  font-size: 9rem;
+  line-height: 0.8;
+  margin-left: 22px;
+  font-size: 11rem;
 }
+
 
 .illustration {
   position: relative;
