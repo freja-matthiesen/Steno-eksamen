@@ -6,7 +6,8 @@
 }
 
 body {
-  margin: 0;
+  height: 200vh; /* giver plads til at scrolle */
+  overflow-x: hidden;
   background-color: #0f0f61;
   font-family: 'Comic Sans MS', sans-serif;
 }
@@ -21,13 +22,15 @@ body {
 .panel-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   width: 90%;
   max-width: 1200px;
+  margin-top: 100px;
 }
 
 .tekstblok {
-  margin-top: 200px;
+  flex: 1;
+  padding-right: 40px;
 }
 
 h1, h2 {
@@ -59,43 +62,30 @@ h3 {
   color: #ffe87a;
 }
 
-.blaa {
-  color: #b3dcff;
-  display: inline-block;
-
-}
-
-.stor {
-  font-size: 9rem;
-  line-height: 0.8;
-  margin-left: 22px;
-  font-size: 11rem;
-}
-
-
 .illustration {
+  flex: 1;
   position: relative;
-  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 600px;
 }
 
-.hoved {
+
+.tunnel {
   width: 100%;
+  max-width: 500px;
+  height: auto;
+  transform-origin: center;
+  transition: transform 0.1s ease-out;
 }
 
 .pige {
   position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%) translateY(0); /* Startposition */
-  transition: transform 0.1s ease-out;
+  bottom: 10px;
   width: 60px;
-}
-.pige {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%) translateY(0);
-  transition: transform 0.5s ease-out;
+  transform: translateY(0);
+  transition: transform 0.1s ease-out;
 }
 
 .pige.move-up {
