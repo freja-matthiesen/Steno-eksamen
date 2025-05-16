@@ -26,24 +26,52 @@ body {
   max-width: 1200px;
 }
 
-.tekstblok h1 {
+.tekstblok {
+  margin-top: 200px;
+}
+
+h1, h2 {
   font-size: 5rem;
   color: #cceaff;
   font-family: 'BagelFatOne', sans-serif;
-  line-height: 1.2;
+  margin-bottom: -50px;
+  margin-top: 20px;
 }
 
-.gul {
+#saadan {
+  font-size: 8rem;
+  margin-top: 0;
+  color: #cceaff;
+  font-family: 'BagelFatOne', sans-serif;
+  
+}
+
+h3 {
+  font-size: 13rem;
+  color: #cceaff;
+  font-family: 'BagelFatOne', sans-serif;
+  margin-top: -290px;
+  margin-left: 410px;
+  text-align: center;
+}
+
+#gul {
   color: #ffe87a;
 }
 
 .blaa {
   color: #b3dcff;
+  display: inline-block;
+
 }
 
 .stor {
-  font-size: 4rem;
+  font-size: 9rem;
+  line-height: 0.8;
+  margin-left: 22px;
+  font-size: 11rem;
 }
+
 
 .illustration {
   position: relative;
