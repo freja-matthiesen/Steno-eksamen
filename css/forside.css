@@ -27,9 +27,10 @@ body {
 }
 
 .tekstblok h1 {
-  font-size: 3rem;
+  font-size: 5rem;
   color: #cceaff;
   font-family: 'BagelFatOne', sans-serif;
+  line-height: 1.2;
 }
 
 .gul {
