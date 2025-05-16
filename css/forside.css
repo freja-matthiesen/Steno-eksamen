@@ -6,14 +6,14 @@
 }
 
 body {
-  height: 200vh; /* giver plads til at scrolle */
+  height: 150vh; /* giver plads til at scrolle */
   overflow-x: hidden;
   background-color: #0f0f61;
   font-family: 'Comic Sans MS', sans-serif;
 }
 
 .panel {
-  height: 100vh;
+  height: 110vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,24 +70,26 @@ h3 {
   height: 600px;
 }
 
-.tunnel img{
+#tunnel {
   width: 90%;
   max-width: 600px;
   height: auto;
-  transform-origin: center;
+  transform-origin: center end;
   transition: transform 0.1s ease-out;
   
 }
 
+
 .tunnel-container {
   position: relative;
   width: 100%;
-  max-width: 600px;
-  height: auto;
+  display: flex;
+  justify-content: end;
+  align-items: end;
   margin-bottom: -50px;
 }
 
-.pige {
+#pige {
   position: absolute;
   bottom: 10px;
   left: 40%;
@@ -97,7 +99,8 @@ h3 {
 }
 
 
-.pige.move-up {
+#pige.move-up {
   transform: translateX(-50%) translateY(-300px); /* eller hvor højt du vil */
 }
+
   
