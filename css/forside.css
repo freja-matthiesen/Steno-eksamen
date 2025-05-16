@@ -64,29 +64,38 @@ h3 {
 
 .illustration {
   flex: 1;
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   height: 600px;
 }
 
-
-.tunnel {
-  width: 100%;
-  max-width: 500px;
+.tunnel img{
+  width: 90%;
+  max-width: 600px;
   height: auto;
   transform-origin: center;
   transition: transform 0.1s ease-out;
+  
+}
+
+.tunnel-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin-bottom: -50px;
 }
 
 .pige {
   position: absolute;
   bottom: 10px;
+  left: 40%;
+  transform: translateX(-50%) translateY(0);
   width: 60px;
-  transform: translateY(0);
   transition: transform 0.1s ease-out;
 }
+
 
 .pige.move-up {
   transform: translateX(-50%) translateY(-300px); /* eller hvor højt du vil */
