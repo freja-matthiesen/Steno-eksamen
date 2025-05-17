@@ -6,13 +6,14 @@
 }
 
 body {
-  margin: 0;
+  height: 150vh; /* giver plads til at scrolle */
+  overflow-x: hidden;
   background-color: #0f0f61;
   font-family: 'Comic Sans MS', sans-serif;
 }
 
 .panel {
-  height: 100vh;
+  height: 110vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,55 +22,85 @@ body {
 .panel-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   width: 90%;
   max-width: 1200px;
+  margin-top: 100px;
 }
 
-.tekstblok h1 {
-  font-size: 3rem;
+.tekstblok {
+  flex: 1;
+  padding-right: 40px;
+}
+
+h1, h2 {
+  font-size: 5rem;
   color: #cceaff;
   font-family: 'BagelFatOne', sans-serif;
+  margin-bottom: -50px;
+  margin-top: 20px;
 }
 
-.gul {
+#saadan {
+  font-size: 8rem;
+  margin-top: 0;
+  color: #cceaff;
+  font-family: 'BagelFatOne', sans-serif;
+  
+}
+
+h3 {
+  font-size: 13rem;
+  color: #cceaff;
+  font-family: 'BagelFatOne', sans-serif;
+  margin-top: -290px;
+  margin-left: 410px;
+  text-align: center;
+}
+
+#gul {
   color: #ffe87a;
 }
 
-.blaa {
-  color: #b3dcff;
-}
-
-.stor {
-  font-size: 4rem;
-}
-
 .illustration {
-  position: relative;
-  width: 50%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 600px;
 }
 
-.hoved {
-  width: 100%;
-}
-
-.pige {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%) translateY(0); /* Startposition */
+#tunnel {
+  width: 90%;
+  max-width: 600px;
+  height: auto;
+  transform-origin: center end;
   transition: transform 0.1s ease-out;
-  width: 60px;
-}
-.pige {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%) translateY(0);
-  transition: transform 0.5s ease-out;
+  
 }
 
-.pige.move-up {
+
+.tunnel-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  margin-bottom: -50px;
+}
+
+#pige {
+  position: absolute;
+  bottom: 10px;
+  left: 40%;
+  transform: translateX(-50%) translateY(0);
+  width: 60px;
+  transition: transform 0.1s ease-out;
+}
+
+
+#pige.move-up {
   transform: translateX(-50%) translateY(-300px); /* eller hvor højt du vil */
 }
+
   

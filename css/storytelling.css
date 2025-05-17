@@ -183,6 +183,7 @@ h1, p {
         display: none;
     }
 
+    
 video {
     width: 100%;
     height: auto;
@@ -195,7 +196,7 @@ video {
 
 #valget {
     z-index: 100;
-    margin-top: -500px;
+    margin-top: -550px;
 }
 
 #valg1, #valg2 {
@@ -214,5 +215,8 @@ video {
     animation: fadeIn 1s forwards;
     animation-delay: 1s;
     margin-bottom: 50px;
-    margin-left: 250px;
+    margin-left: 300px;
+    margin-right: 300px;
+
 }
+
