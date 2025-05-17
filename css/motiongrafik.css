@@ -1,8 +1,21 @@
+@font-face {
+  font-family: 'BagelFatOne';
+  src: url('../fonts/BagelFatOne-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Big Shoulders Display';
+  src: url('../fonts/BigShoulders-VariableFont_opsz\,wght.ttf') format('truetype');
+}
+
 body {
     margin: 0;
     padding: 0;
     overflow: hidden;
     cursor: url("img/curser.png"), auto;
+    font-family: 'Big Shoulders Display';
   }
   
 .scene {
@@ -25,7 +38,7 @@ body {
     position: absolute;
     left: 40%;
     top: 40%;
-    width: 15%;
+    width: 16.5%;
     z-index: 1;
     pointer-events: none; 
   }
@@ -77,7 +90,7 @@ body {
 
 .circle6 {
     position: absolute;
-    left: 44.3%;
+    left: 44%;
     top: 89.3%;
     width: 5%;
     z-index: 10;
@@ -289,7 +302,7 @@ body {
   }
 
 .muscle {
-    left: 45.7%;
+    left: 45.3%;
     top: 92%;
     width: 2%;
   }
@@ -448,7 +461,8 @@ body {
   
 .popup-box h2 {
     margin-top: 0;
-    font-size: 1.5rem;
+    font-size: 1.9rem;
+    font-family: 'BagelFatOne', sans-serif;
   }
   
 .popup-box button {
@@ -486,5 +500,41 @@ body {
     max-width: 500px;
     text-align: center;
   }
+
+  .popup-content h2{
+    font-family: 'BagelFatOne', sans-serif;
+  }
   
+  .next {
+    text-decoration: none; 
+    background-color: #374cab;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    display: inline-block; 
+}
+
+.genstartOgSkip {
+    position: absolute;
+    bottom: 10px;  
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    gap: 100px;  
+    justify-content: center;
+    align-items: center; 
+}
+
+
+.genstartOgSkip img {
+    width: 100px;  
+    height: 60px;
+
+    cursor: pointer;
+    margin-top: 150px;
+}
   
