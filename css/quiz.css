@@ -38,7 +38,7 @@ img {
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 500px;
+    height: 550px;
     margin-left: 15%;
     background-color:#bfecfd;
     border-radius: 10px;
@@ -94,9 +94,13 @@ aside {
     transition: all 0.3s;
 }
 
-.btn:hover {
-    background: #374cab;
-    color: #fff;
+.btn:hover:not([disabled]) {
+    background: #ffffff;
+    color: #000000;
+}
+
+.btn:disabled {
+    cursor:no-drop;
 }
 
 #next-btn {
@@ -110,4 +114,12 @@ aside {
     border-radius: 5px;
     cursor: pointer;
     display: none;
+}
+
+.korrekt {
+    background: #74b779;
+}
+
+.forkert {
+    background: #c85850;
 }

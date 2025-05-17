@@ -64,6 +64,10 @@ function showQuestion () {
         button.innerText = answer.text;
         button.classList.add('btn');
         answerButtons.appendChild(button);
+        if (answer.correct) {
+            button.dataset.correct = answer.correct;
+        }
+        button.addEventListener('click', selectAnswer);
     });
 }
 
@@ -73,5 +77,48 @@ function resetState () {
         answerButtons.removeChild(answerButtons.firstChild);
     }
 }
+
+function selectAnswer (e) {
+    const selectedBtn = e.target;
+    const isCorrect = selectedBtn.dataset.correct === "true";
+    if (isCorrect) {
+        selectedBtn.classList.add('korrekt');
+        score++;
+    } else {
+        selectedBtn.classList.add('forkert');
+    }
+    Array.from(answerButtons.children).forEach(button => {
+        if (button.dataset.correct === "true") {
+            button.classList.add('korrekt');
+        }
+        button.disabled = true;
+    });
+    nextButton.style.display = 'block';
+
+}
+
+function showScore () {
+    resetState();
+    questionElement.innerHTML = `Du fik ${score} ud af ${questions.length} rigtige!`;
+    nextButton.innerHTML = "Prøv igen";
+    nextButton.style.display = 'block';
+}
+
+function handleNextButton () {
+    currentQuestionIndex++;
+    if (currentQuestionIndex < questions.length) {
+        showQuestion();
+    } else {
+        showScore();
+    }
+}
+
+nextButton.addEventListener('click', () => {
+    if(currentQuestionIndex < questions.length){
+        handleNextButton();
+    } else {
+        startQuiz();
+    }
+});
 
 startQuiz();
