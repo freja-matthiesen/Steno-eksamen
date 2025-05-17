@@ -146,14 +146,14 @@ window.addEventListener('DOMContentLoaded', () => {
   infoPopup.style.display = "none";
 });
 
-// pop-op til hjertet
+// pop-op 
 function showInfoPopup(title, text) {
     infoTitle.textContent = title;
     infoText.textContent = text;
     infoPopup.style.display = "flex";
 }
 
-// Luk-knap til hjertet
+// Luk-knap 
 closeInfoBtn.addEventListener("click", () => {
   infoPopup.style.display = "none";
 });
