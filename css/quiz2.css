@@ -152,6 +152,22 @@ aside {
     font-size: 1.2rem;
 }
 
+#videre-btn {
+    background: var(--darkblue);
+    color: var(--lightblue);
+    font-weight: 800;
+    width: 150px;
+    border: 0;
+    padding: 20px;
+    margin: 20px auto 0;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    font-family: 'big Shoulders Display', sans-serif;
+    font-size: 1.2rem;
+}
+
+
 
 .korrekt {
     background: #74b779;

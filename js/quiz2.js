@@ -31,6 +31,7 @@ const questions = [
 const questionElement = document.getElementById('question');
 const answerButtons = document.getElementById('answer-buttons');
 const nextButton = document.getElementById('next-btn');
+const videreButton = document.getElementById('videre-btn');
 
 let currentQuestionIndex = 0;
 let score = 0;
@@ -62,6 +63,7 @@ function showQuestion () {
 
 function resetState () {
     nextButton.style.display = 'none';
+    videreButton.style.display = 'none';
     while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild);
     }
@@ -83,6 +85,7 @@ function selectAnswer (e) {
         button.disabled = true;
     });
     nextButton.style.display = 'block';
+    videreButton.style.display = 'none';
 
 }
 
@@ -91,6 +94,7 @@ function showScore () {
     questionElement.innerHTML = `Du fik ${score} ud af ${questions.length} rigtige!`;
     nextButton.innerHTML = "Prøv igen";
     nextButton.style.display = 'block';
+    videreButton.style.display = 'block';
 }
 
 function handleNextButton () {
@@ -108,6 +112,10 @@ nextButton.addEventListener('click', () => {
     } else {
         startQuiz();
     }
+    
+    videreButton.addEventListener('click', () => {
+        window.location.href = "quiz.html";
+    });
 });
 
 startQuiz();
