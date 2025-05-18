@@ -27,7 +27,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #0d0877;
+    background-color: var(--darkblue);
     font-family: 'BagelFatOne', sans-serif;
 }
 
@@ -97,7 +97,7 @@ body {
 }
 
 .closeBtn {
-    background-color: #374cab; 
+    background-color: var(--darkblue); 
     color: white;
     border: none;
     padding: 10px 20px;
@@ -109,12 +109,13 @@ body {
 }
 
 .closeBtn:hover {
-    background-color: #73a6cb;
+    background-color: var(--lightblue);
+    color: var(--darkblue);
 }
 
 #alertMessage {
     font-size: 2rem;
-    color: #333;
+    color: var(--grey);
     margin-bottom: 15px;
     margin-right: 10%;
     margin-left: 10%;
@@ -136,7 +137,7 @@ body {
 
 .next {
     text-decoration: none; 
-    background-color: #374cab;
+    background-color: var(--darkblue);
     padding: 10px 20px;
     text-transform: uppercase;
     cursor: pointer;
@@ -148,7 +149,8 @@ body {
 }
 
 .next:hover {
-    background-color: #73a6cb;
+    background-color: var(--lightblue);
+    color: var(--darkblue);
 }
 
 .genstartOgSkip {
