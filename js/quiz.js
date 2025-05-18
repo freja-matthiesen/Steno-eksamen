@@ -90,11 +90,11 @@ function selectAnswer (e) {
     } else { // hvis svaret er forkert, tilføjes klassen forkert
         selectedBtn.classList.add('forkert'); 
     }
-    Array.from(answerButtons.children).forEach(button => {
-        if (button.dataset.correct === "true") {
+    Array.from(answerButtons.children).forEach(button => { // opretter array fra answerButtons direkte børn og løber igennem hver knap 
+        if (button.dataset.correct === "true") { // hvis knappen er korrekt, tilføjes klassen korrekt
             button.classList.add('korrekt');
         }
-        button.disabled = true;
+        button.disabled = true; // deaktiverer knapper, så de ikke kan klikkes på igen
     });
     nextButton.style.display = 'block';
 
@@ -108,18 +108,18 @@ function showScore () { // viser score og giver mulighed for at starte quizzen f
 }
 
 function handleNextButton () {
-    currentQuestionIndex++;
+    currentQuestionIndex++; // øger variablen med 1, så næste spørgsmål vises
     if (currentQuestionIndex < questions.length) {
-        showQuestion();
+        showQuestion(); // hvis der er flere spørgsmål, vises næste spørgsmål
     } else {
-        showScore();
+        showScore(); // hvis der ikke er flere spørgsmål, vises score
     }
 }
 
-nextButton.addEventListener('click', () => {
-    if(currentQuestionIndex < questions.length){
+nextButton.addEventListener('click', () => { //når der klikkes på nextButton, kan der ske 2 ting
+    if(currentQuestionIndex < questions.length){ // hvis der er flere spørgsmål kaldes handleNextButton
         handleNextButton();
-    } else {
+    } else { // hvis der ikke er flere spørgsmål, startes quizzen forfra
         startQuiz();
     }
 });
