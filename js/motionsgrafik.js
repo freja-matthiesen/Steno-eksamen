@@ -125,7 +125,7 @@ phone.addEventListener("mouseleave", () => {
 
 // pop-up til iphone
 phone.addEventListener("click", () => {
-    showInfoPopup("Usikkerhed", "Selv noget så hverdagsagtigt som en iPhone kan være en trigger – måske fordi den forbindes med dårlige nyheder, sociale medier eller en konstant følelse af at skulle være på.");
+    showInfoPopup("Usikkerhed", "Selv noget så hverdagsagtigt som en iPhone kan være en trigger – måske fordi den forbindes med dårlige nyheder, sociale medier eller en konstant følelse af at skulle være online.");
   });
 
 // Pop-op struktuering
