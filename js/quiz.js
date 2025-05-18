@@ -76,6 +76,7 @@ function showQuestion () {
 
 function resetState () { // nulstiller qiuz og fjerner tidligere svar
     nextButton.style.display = 'none';
+    continueButton.style.display = 'none'; 
     while (answerButtons.firstChild) { // loopet kører så længe der er mindst et barn i answerButtons
         answerButtons.removeChild(answerButtons.firstChild);
     }
@@ -100,11 +101,18 @@ function selectAnswer (e) {
 
 }
 
+const continueButton = document.getElementById('continue-btn');
+
+continueButton.addEventListener('click', () => {
+    window.location.href = '/video.html'; // når der klikkes på continueButton (videre), sendes brugeren til video.html
+});
+
 function showScore () { // viser score og giver mulighed for at starte quizzen forfra
     resetState();
     questionElement.innerHTML = `Du fik ${score} ud af ${questions.length} rigtige!`;
     nextButton.innerHTML = "Prøv igen";
     nextButton.style.display = 'block';
+    continueButton.style.display = 'inline-block';
 }
 
 function handleNextButton () {
