@@ -51,7 +51,7 @@ function drop(event) { // Henter data fra drag() funktionen og gemmer det i drop
         target.appendChild(document.getElementById(data));
         currentPositions[data] = target.id;  // Opdaterer position
 
-        setTimeout(checkPuzzleCompletion, 100);  // Forsinklelse på 100 ms, når puslespillet er færdigt
+        setTimeout(checkPuzzleCompletion, 100);  // Forsinklelse på 100 ms, når puslespillet er færdigt --> Alle brikkerne er placeret i dropBoxene før popUp kommer frem
     }
 }
 
