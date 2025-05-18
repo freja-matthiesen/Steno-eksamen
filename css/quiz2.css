@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #0d0877;
+}
+
+:root{
+    --darkblue:#0F038F;
+    --blue:#1000F7;
+    --lightblue:#BFECFD;
+    --orange:#FF982A;
+    --yellow:#FCF084;
+    --lightgreen:#74B779;
+    --grey:#353535;
+
+}
+
+img {
+    width: 550px;
+    border-radius: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+
+.billed {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+}
+
+.quiz-container {
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-box {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 550px;
+    margin-left: 15%;
+    background-color:#bfecfd;
+    border-radius: 10px;
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-box h1 {
+    font-weight: 700;
+    border-bottom: 1px solid var(--darkblue);
+    color: var(--darkblue);
+    padding-bottom: 30px;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.quiz-box h2 {
+    color: var(--darkblue);
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.quiz {
+    padding:20px 0;
+    width: 70%;
+}
+
+#answer-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn {
+    background: var(--darkblue);
+    color: #bfecfd;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid var(--darkblue);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.3s;
+}
+
+.btn:hover:not([disabled]) {
+    background: #ffffff;
+    color: #000000;
+}
+
+.btn:disabled {
+    cursor:no-drop;
+}
+
+#next-btn {
+    background: #374cab;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.korrekt {
+    background: #74b779;
+}
+
+.forkert {
+    background: #c85850;
+}
+
+.wave-left {
+    left: 0;
+    background-image: url('../img/bølge.png'); 
+  }
+  
+  .wave-right {
+    right: 0;
+    background-image: url('../img/bølge.png'); 
+    transform: scaleX(-1); /* Spejlvender bølgen horisontalt */
+  }
+  
+  @keyframes floatSideways {
+    0%   { transform: translateX(0); } /* startposition.-forskyder ikke */
+    50%  { transform: translateX(10px); } /* Halvvejs – bevæger sig 10px til højre */
+    100% { transform: translateX(0); } /* Slutter tilbage ved startposition */
+  }
+  
+  .star { /* Definerer udseendet og placeringen af hver stjerne på siden */
+    position: absolute;
+    z-index: -1; /* Sørger for at stjernen er bagved alt andet indhold */
+    width: 80px;
+    height: 80px;
+    background-image: url('../img/stjerne.png');
+    background-size: contain; /* Sørger for at billedet skaleres så det passer i boksen uden at beskæres */
+    background-repeat: no-repeat;
+    opacity: 0.8; /* Gør stjernen lidt gennemsigtig for en bedre effekt */
+    animation: floatSideways 5s ease-in-out infinite; 
+    /* Animation der får stjernen til at bevæge sig fra side til side i en loop */
+  }

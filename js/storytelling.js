@@ -16,7 +16,7 @@ const videoSti = (navn) => `video/storytelling/${navn}.mp4`;
 
 // Spillets flow
 const spilFlow = {
-  start: { fil: "start", valg: ["video2", "video6"], tekst: ["Lade hende være, det skal nok gå over af sig selv", "Du går hen til hende, og spørger hende, om hun er okay"] },
+  start: { fil: "start", valg: ["video2", "video6"], tekst: ["Lader hende være, det skal nok gå over af sig selv", "Du går hen til hende, og spørger om hun er okay"] },
   video2: { fil: "video2", valg: ["video4", "video3"], tekst: ["Du henter en lærer", "Du sætter dig hen til hende"] },
   video3: { fil: "video3", valg: ["video5", "video4"], tekst: ["Du prøver at få Emma til at trække vejret roligt ved selv at gøre det.", "Du henter en lærer"] },
   video4: { fil: "video4", valg: ["slut", "slut"] },

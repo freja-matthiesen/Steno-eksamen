@@ -96,7 +96,9 @@ h3 {
   transform: translateX(-50%) translateY(0);
   width: 60px;
   transition: transform 0.1s ease-out;
+  z-index: 1;
 }
+
 
 
 #pige.move-up {
