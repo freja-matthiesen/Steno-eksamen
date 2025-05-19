@@ -25,7 +25,6 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    cursor: url("img/curser.png"), auto;
     font-family: 'Big Shoulders Display';
   }
   
@@ -231,7 +230,7 @@ body {
   }
   
 .sky6 {
-  animation: moveSky 2 ease-in-out infinite alternate;
+  animation: moveSky 2s ease-in-out infinite alternate;
   }
   
 @keyframes moveSky {

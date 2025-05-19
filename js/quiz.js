@@ -76,7 +76,7 @@ function showQuestion () {
 
 function resetState () { // nulstiller qiuz og fjerner tidligere svar
     nextButton.style.display = 'none';
-    continueButton.style.display = 'none'; 
+    continueButton.style.display = 'none'; // skjuler continueButton
     while (answerButtons.firstChild) { // loopet kører så længe der er mindst et barn i answerButtons
         answerButtons.removeChild(answerButtons.firstChild);
     }
