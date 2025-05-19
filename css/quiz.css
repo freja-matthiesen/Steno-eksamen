@@ -17,9 +17,20 @@
     font-weight: normal;
     font-style: normal;
   }
+
+  :root{
+    --darkblue:#0F038F;
+    --blue:#1000F7;
+    --lightblue:#BFECFD;
+    --orange:#FF982A;
+    --yellow:#FCF084;
+    --lightgreen:#74B779;
+    --grey:#353535;
+
+}
 body {
     height: 100vh;
-    background: #0d0877 ;
+    background: var(--darkblue); 
 }
 
 img {

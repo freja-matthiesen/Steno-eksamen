@@ -4,12 +4,31 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'BagelFatOne';
+    src: url('../fonts/BagelFatOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  :root{
+    --darkblue:#0F038F;
+    --blue:#1000F7;
+    --lightblue:#BFECFD;
+    --orange:#FF982A;
+    --yellow:#FCF084;
+    --lightgreen:#74B779;
+    --grey:#353535;
+
+}
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #0d0877;
+    background-color: var(--darkblue);
+    font-family: 'BagelFatOne', sans-serif;
 }
 
 .drag {
@@ -68,46 +87,46 @@ body {
 
 .modal-content {
     background-color: #fff;
-    padding: 20px;
+    padding: 40px;
     border-radius: 10px;
     text-align: center;
-    width: 500px;
+    width: 600px;
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
 }
 
 .closeBtn {
-    background-color: #374cab; 
+    background-color: var(--darkblue); 
     color: white;
     border: none;
     padding: 10px 20px;
     text-transform: uppercase;
     cursor: pointer;
     border-radius: 5px;
-    font-size: 16px;
-    margin-bottom: 5px;
+    font-size: 1.5rem;
+    font-family: 'BagelFatOne', sans-serif;
 }
 
 .closeBtn:hover {
-    background-color: #73a6cb;
+    background-color: var(--lightblue);
+    color: var(--darkblue);
 }
 
 #alertMessage {
-    font-size: 20px;
-    color: #333;
-    font-weight: bold;
+    font-size: 2rem;
+    color: var(--grey);
     margin-bottom: 15px;
     margin-right: 10%;
     margin-left: 10%;
+    font-family: 'BagelFatOne', sans-serif;
 }
 
 #modalImage {
-    max-width: 80%; 
+    max-width: 100%; 
     height: auto;   
     border-radius: 10px;
     margin-bottom: 40px; 
-    margin-left: 10%;
 }
 
 .buttons {
@@ -118,14 +137,20 @@ body {
 
 .next {
     text-decoration: none; 
-    background-color: #374cab;
+    background-color: var(--darkblue);
     padding: 10px 20px;
     text-transform: uppercase;
     cursor: pointer;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 1.5rem;
     color: white;
     display: inline-block; 
+    font-family: 'BagelFatOne', sans-serif;
+}
+
+.next:hover {
+    background-color: var(--lightblue);
+    color: var(--darkblue);
 }
 
 .genstartOgSkip {
@@ -144,7 +169,6 @@ body {
 .genstartOgSkip img {
     width: 100px;  
     height: 60px;
-
     cursor: pointer;
     margin-top: 150px;
 }
@@ -153,10 +177,10 @@ body {
 .reset  {
     padding: 10px 25px;
     border: none;
-    background: #bfecfd;
-    color: #2f363e;
+    background: var(--lightblue);
+    color: var(--darkblue);
+    font-family: 'BagelFatOne', sans-serif;
     font-size: 1em;
-    font-weight: 700;
     cursor: pointer;
     text-transform: uppercase;
     border-radius: 10px;
