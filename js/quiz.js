@@ -2,7 +2,7 @@
 
 const questions = [ // Array med objekter. Indehodler spørgsmål og korrekte svar 
     {
-        question: "Hvilket nr illustrerer social angst?", // spørgsmål 1
+        question: "Hvilken figur illustrerer social angst?", // spørgsmål 1
         answers: [
             { text: "1", correct: false },
             { text: "2", correct: true }, // korrekt svar
@@ -11,7 +11,7 @@ const questions = [ // Array med objekter. Indehodler spørgsmål og korrekte sv
         ]
     },
     {
-        question: "Hvilket nr illustrerer fobi angst?", // spørgsmål 2
+        question: "Hvilken figur illustrerer fobi angst?", // spørgsmål 2
         answers: [
             { text: "1", correct: false },
             { text: "2", correct: false },
@@ -20,7 +20,7 @@ const questions = [ // Array med objekter. Indehodler spørgsmål og korrekte sv
         ]
     },
     {
-        question: "Hvilket nr illustrerer seperations angst?", // spørgsmål 3
+        question: "Hvilken figur illustrerer seperations angst?", // spørgsmål 3
         answers: [
             { text: "1", correct: true }, //korrekt svar
             { text: "2", correct: false },
@@ -29,7 +29,7 @@ const questions = [ // Array med objekter. Indehodler spørgsmål og korrekte sv
         ]
     },
     {
-        question: "Hvilket nr illustrerer generaliseret angst?",  // spørgsmål 4
+        question: "Hvilken figur illustrerer generaliseret angst?",  // spørgsmål 4
         answers: [
             { text: "1", correct: false },
             { text: "2", correct: false },
