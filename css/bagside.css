@@ -1,50 +1,50 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 @font-face {
-    font-family: 'BagelFatOne';
-    src: url('../fonts/BagelFatOne-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: 'BigShoulders';
-    src: url('../fonts/BigShoulders-VariableFont_opsz\,wght.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-  :root{
-    --darkblue:#0F038F;
-    --blue:#1000F7;
-    --lightblue:#BFECFD;
-    --orange:#FF982A;
-    --yellow:#FCF084;
-    --lightgreen:#74B779;
-    --grey:#353535;
-
+  font-family: 'BagelFatOne';
+  src: url('../fonts/BagelFatOne-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
-  body {
-    margin: 0;
-    padding: 0;
-    background-color: var(--darkblue);
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    color: #ffffff;
-    text-align: center;
-    background-size: 50px 50px;
-    overflow: hidden;
-  }
+
+@font-face {
+  font-family: 'BigShoulders';
+  src: url('../fonts/BigShoulders-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --darkblue: #0F038F;
+  --blue: #1000F7;
+  --lightblue: #BFECFD;
+  --orange: #FF982A;
+  --yellow: #FCF084;
+  --lightgreen: #74B779;
+  --grey: #353535;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--darkblue);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: #ffffff;
+  text-align: center;
+  background-size: 50px 50px;
+  overflow: hidden;
+}
 
 h1 {
-    font-size: 7rem;
-    font-family: 'BagelFatOne', sans-serif;
-    color: var(--lightblue);
-    margin-top: 2rem;
-  }
+  font-size: 7rem;
+  font-family: 'BagelFatOne', sans-serif;
+  color: var(--lightblue);
+  margin-top: 2rem;
+}
 
 h2 {
         font-size: 2.5rem;
@@ -71,65 +71,85 @@ h3 {
     margin-left: 40px;
     font-size: 22px;
 }
+
+h3 {
+  color: white;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 1.2rem;
+  margin-left: 44rem;
+  margin-top: 250px;
+}
+
+/* Styling af Hotline-telefon nr */
+.hotline {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 40px;
+  font-size: 22px;
+}
+
 .nummer {
-    display: inline-block;
-    margin-left: 10rem; 
-    align-items: baseline; 
-  }
-  .nummer1 {
-    transform: translateX(220px); 
-  }
+  display: inline-block;
+  margin-left: 10rem;
+  align-items: baseline;
+}
 
-  .wave-left,
-  .wave-right {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 500px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 0;
-    opacity: 0.4;
-    pointer-events: none;
-  }
-  
-  .wave-left {
-    left: 0;
-    background-image: url('../img/bølge.png'); 
-  }
-  
-  .wave-right {
-    right: 0;
-    background-image: url('../img/bølge.png'); 
-    transform: scaleX(-1); /* Spejlvender bølgen horisontalt */
-  }
-  
-  @keyframes floatSideways {
-    0%   { transform: translateX(0); } /* startposition.-forskyder ikke */
-    50%  { transform: translateX(10px); } /* Halvvejs – bevæger sig 10px til højre */
-    100% { transform: translateX(0); } /* Slutter tilbage ved startposition */
-  }
-  
-  .star { /* Definerer udseendet og placeringen af hver stjerne på siden */
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    background-image: url('../img/stjerne.png');
-    background-size: contain; /* Sørger for at billedet skaleres så det passer i boksen uden at beskæres */
-    background-repeat: no-repeat;
-    opacity: 0.8; /* Gør stjernen lidt gennemsigtig for en bedre effekt */
-    animation: floatSideways 5s ease-in-out infinite; 
-    /* Animation der får stjernen til at bevæge sig fra side til side i en loop */
-  }
+.nummer1 {
+  transform: translateX(220px);
+}
 
+.wave-left,
+.wave-right {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+  opacity: 0.4;
+  pointer-events: none;
+}
 
-  h1, h2, h3, .hotline, #visitkort-knap, #visitkort-popup, .billed img{
+.wave-left {
+  left: 0;
+  background-image: url('../img/bølge.png');
+}
+
+.wave-right {
+  right: 0;
+  background-image: url('../img/bølge.png');
+  transform: scaleX(-1);
+}
+
+@keyframes floatSideways {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(10px); }
+  100% { transform: translateX(0); }
+}
+
+.star {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-image: url('../img/stjerne.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  animation: floatSideways 5s ease-in-out infinite;
+}
+
+h1, h2, h3, .hotline, #visitkort-knap, #visitkort-popup, .billed img {
   position: relative;
   z-index: 1;
 }
 
 #visitkort-knap {
-    margin-right: 50rem;
+    position: fixed;          
+    bottom: 40px;             
+    left: 250px; 
     padding: 12px 24px;
     background-color: #BFECFD;
     color: var(--darkblue);
@@ -139,21 +159,7 @@ h3 {
     font-family: 'BagelFatOne', sans-serif;
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-
-
-  position: fixed;          
-  bottom: 40px;             
-  left: 250px;              
-  padding: 12px 24px;
-  background-color: white;
-  color: var(--darkblue);
-  border: none;
-  border-radius: 12px;
-  font-size: 1.3rem;
-  font-family: 'BagelFatOne', sans-serif;
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  z-index: 1000;           
+    z-index: 1000;
 }
   
   /* Styling af Popup med billeder */
@@ -253,18 +259,64 @@ h3 {
     font-size: 1rem;
   }
 
-  .billed img {
-    width:600px;
-    display:flex;
+/* Styling af information i popup */
+#info-popup {
+  display: none;
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  color: var(--darkblue);
+  padding: 25px;
+  border-radius: 20px;
+  max-width: 400px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  z-index: 9999;
+  text-align: left;
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+}
 
-  }
+#info-popup h4 {
+  margin-top: 0;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
 
-  .billed {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+#info-popup button {
+  margin-top: 15px;
+  padding: 8px 16px;
+  background-color: var(--darkblue);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#info-popup ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+#info-popup li {
+  margin-bottom: 16px;
+  font-size: 1rem;
+}
+
+.billed img {
+  width: 600px;
+  display: flex;
+  margin-top: -70px;
+}
+
+.billed {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 
 
