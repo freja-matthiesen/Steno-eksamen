@@ -209,7 +209,8 @@ video {
     font-family: 'Big Shoulders Display', sans-serif;
     font-size: 3rem;
     font-weight: bold;
-    padding: 40px 40px;
+    width: 600px;
+    height: 200px;
     border-radius: 10px;
     text-align: center;
     border: none;
