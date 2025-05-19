@@ -11,6 +11,13 @@
     font-style: normal;
   }
 
+  @font-face {
+    font-family: 'BigShoulders';
+    src: url('../fonts/BigShoulders-VariableFont_opsz\,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
   :root{
     --darkblue:#0F038F;
     --blue:#1000F7;
@@ -41,7 +48,7 @@ h1 {
 
 h2 {
         font-size: 2.5rem;
-        font-family: 'BigShoulder', sans-serif;
+        font-family: 'BigShoulders', sans-serif;
         color: var(--lightblue);
         margin-bottom: 4rem;
     }
