@@ -53,16 +53,15 @@ h2 {
         margin-bottom: 4rem;
     }
 
-h3 {
-        background-color: var(--grey);    
+h3 {    
         color: white;                  
-        padding: 10px 20px;            
-        border-radius: 20px;           
+        padding: 10px 20px;                   
         display: inline-block;         
-        font-size: 1.2rem;             
-        margin-left: -68rem; 
-        
+        font-size: 1.2rem; 
+        margin-left: 44rem;  
+        margin-top: 250px;          
 }  
+
 /* Styling af Hotline- telefon nr  */
 .hotline {
     margin-top: 35px;
@@ -128,7 +127,10 @@ h3 {
   z-index: 1;
 }
 
+
 #visitkort-knap {
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
     margin-right: 50rem;
     padding: 12px 24px;
     background-color: #BFECFD;
@@ -140,13 +142,34 @@ h3 {
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   }
+=======
+=======
+>>>>>>> Stashed changes
+  position: fixed;          
+  bottom: 40px;             
+  left: 250px;              
+  padding: 12px 24px;
+  background-color: white;
+  color: var(--darkblue);
+  border: none;
+  border-radius: 12px;
+  font-size: 1.3rem;
+  font-family: 'BagelFatOne', sans-serif;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;           
+}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
   
   /* Styling af Popup med billeder */
   #visitkort-popup {
+    position: fixed; 
+    bottom: 40px;   
+    left: 30px;
     display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
     background-color: #ffffff;
     padding: 20px;
@@ -173,18 +196,37 @@ h3 {
     cursor: pointer;
   }
   /* Styling af info boks */
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 #info-boks {
     background-color: #BFECFD;
+=======
+=======
+>>>>>>> Stashed changes
+  #info-boks {
+    background-color: #ffffff;
+>>>>>>> Stashed changes
     color: var(--darkblue);
     padding: 20px;
     border-radius: 20px;
     width: 300px;
+    position: absolute;
     text-align: center;
     font-family: 'BagelFatOne', sans-serif;
     cursor: pointer;
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
     position: absolute;
     top: 55%; /* justér efter behov */
     right: 20%;
+=======
+    top: 80%; /* Flytter den længere ned */
+    right: 14%; /* Juster efter behov */
+>>>>>>> Stashed changes
+=======
+    top: 80%; /* Flytter den længere ned */
+    right: 14%; /* Juster efter behov */
+>>>>>>> Stashed changes
     z-index: 1;
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     font-size: 1.3rem;
