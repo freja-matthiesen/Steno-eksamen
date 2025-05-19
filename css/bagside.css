@@ -123,6 +123,7 @@ h3 {
 
 #visitkort-knap {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     margin-right: 50rem;
     padding: 12px 24px;
     background-color: #BFECFD;
@@ -135,6 +136,8 @@ h3 {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   }
 =======
+=======
+>>>>>>> Stashed changes
   position: fixed;          
   bottom: 40px;             
   left: 250px;              
@@ -149,6 +152,9 @@ h3 {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   z-index: 1000;           
 }
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   
   /* Styling af Popup med billeder */
@@ -184,9 +190,12 @@ h3 {
   }
   /* Styling af info boks */
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 #info-boks {
     background-color: #BFECFD;
 =======
+=======
+>>>>>>> Stashed changes
   #info-boks {
     background-color: #ffffff;
 >>>>>>> Stashed changes
@@ -199,9 +208,14 @@ h3 {
     font-family: 'BagelFatOne', sans-serif;
     cursor: pointer;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     position: absolute;
     top: 55%; /* justér efter behov */
     right: 20%;
+=======
+    top: 80%; /* Flytter den længere ned */
+    right: 14%; /* Juster efter behov */
+>>>>>>> Stashed changes
 =======
     top: 80%; /* Flytter den længere ned */
     right: 14%; /* Juster efter behov */
