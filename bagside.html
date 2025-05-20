@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bagside</title>
-  <link rel="stylesheet" href="/css/bagside.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bagside</title>
+  <link rel="stylesheet" href="/css/bagside.css" />
 </head>
 <body>
-  <h1>Har du det svært?</h1>
-  <h2>Du er ikke alene med dine tanker</h2>
-
+    <h1> Har du det svært?</h1>
+    <h2>Du er ikke alene med dine tanker</h2>
+    
   <section class="info-section">
     <aside class="billed">
       <img src="/img/mockup-visitkort.png" alt="visitkort">
@@ -32,22 +32,21 @@
 
   <!-- Stjerner i baggrunden -->
   <section class="stars">
-    <div class="star" style="top: 5%; left: 10%;"></div>
-    <div class="star" style="top: 72%; left: 73%;"></div>
-    <div class="star" style="top: 30%; left: 20%;"></div>
-    <div class="star" style="top: 50%; left: 80%;"></div>
-    <div class="star" style="top: 70%; left: 40%;"></div>
-    <div class="star" style="top: 85%; left: 90%;"></div>
-    <div class="star" style="top: 80%; left: 20%;"></div>
-    <div class="star" style="top: 10%; left: 85%;"></div>
-    <div class="star" style="top: 82%; left: 60%;"></div>
+    <article class="star" style="top: 5%; left: 10%;"></article>
+    <article class="star" style="top: 72%; left: 73%;"></article>
+    <article class="star" style="top: 30%; left: 20%;"></article>
+    <article class="star" style="top: 50%; left: 80%;"></article>
+    <article class="star" style="top: 70%; left: 40%;"></article>
+    <article class="star" style="top: 85%; left: 90%;"></article>
+    <article class="star" style="top: 80%; left: 20%;"></article>
+    <article class="star" style="top: 10%; left: 85%;"></article>
+    <article class="star" style="top: 82%; left: 60%;"></article>
   </section>
 
-  <!-- Undertekst -->
-  <h3>Det kræver kun et opkald</h3>
+<!-- Knap til at åbne popup -->
+<button id="visitkort-knap" onclick="toggleVisitkort()">Se vores visitkort</button>
 
-  <!-- Info-knap -->
-  <section id="info-boks" onclick="toggleInfo()">
+<section id="info-boks" onclick="toggleInfo()">
     <p>Klik her for at læse om hjælpen</p>
   </section>
 

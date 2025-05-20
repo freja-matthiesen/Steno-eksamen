@@ -47,10 +47,29 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5rem;
-  font-family: 'BigShoulders', sans-serif;
-  color: var(--lightblue);
-  margin-bottom: 4rem;
+        font-size: 2.5rem;
+        font-family: 'BigShoulders', sans-serif;
+        color: var(--lightblue);
+        margin-bottom: 4rem;
+    }
+
+h3 {
+        background-color: var(--grey);    
+        color: white;                  
+        padding: 10px 20px;            
+        border-radius: 20px;           
+        display: inline-block;         
+        font-size: 1.2rem;             
+        margin-left: -68rem; 
+        
+}  
+/* Styling af Hotline- telefon nr  */
+.hotline {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+    font-size: 22px;
 }
 
 h3 {
@@ -128,72 +147,117 @@ h1, h2, h3, .hotline, #visitkort-knap, #visitkort-popup, .billed img {
 }
 
 #visitkort-knap {
-  position: fixed;
-  bottom: 40px;
-  left: 250px;
-  padding: 12px 24px;
-  background-color: white;
-  color: var(--darkblue);
-  border: none;
-  border-radius: 12px;
-  font-size: 1.3rem;
-  font-family: 'BagelFatOne', sans-serif;
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
+    position: fixed;          
+    bottom: 40px;             
+    left: 250px; 
+    padding: 12px 24px;
+    background-color: #BFECFD;
+    color: var(--darkblue);
+    border: none;
+    border-radius: 12px;
+    font-size: 1.3rem;
+    font-family: 'BagelFatOne', sans-serif;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
 }
+  
+  /* Styling af Popup med billeder */
+  #visitkort-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    z-index: 1001;
+  }
+  
+  #visitkort-popup img {
+    max-width: 300px;
+    margin: 10px auto;
+    display: block;
+    border-radius: 10px;
+  }
+  /* Styling af Popup knap */
+  #visitkort-popup button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: var(--darkblue);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  /* Styling af info boks */
 
-/* Styling af Popup med billeder */
-#visitkort-popup {
-  position: fixed;
-  top: 50%;                     
-  left: 50%;                    
-  transform: translate(-50%, -50%);
-  display: none;
-  transform: translate(-50%, -50%);
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 20px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
-  text-align: center;
-  z-index: 1001;
-}
-
-#visitkort-popup img {
-  max-width: 300px;
-  margin: 10px auto;
-  display: block;
-  border-radius: 10px;
-}
-
-/* Styling af Popup knap */
-#visitkort-popup button {
-  margin-top: 15px;
-  padding: 10px 20px;
-  background-color: var(--darkblue);
-  color: #fff;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-/* Styling af info boks */
 #info-boks {
-  background-color: #ffffff;
-  color: var(--darkblue);
-  padding: 20px;
-  border-radius: 20px;
-  width: 300px;
-  position: absolute;
-  text-align: center;
-  font-family: 'BagelFatOne', sans-serif;
-  cursor: pointer;
-  top: 80%;
-  right: 14%;
-  z-index: 1;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  font-size: 1.3rem;
-}
+    background-color: #BFECFD;
+    color: var(--darkblue);
+    padding: 20px;
+    border-radius: 20px;
+    width: 300px;
+    text-align: center;
+    font-family: 'BagelFatOne', sans-serif;
+    cursor: pointer;
+    position: absolute;
+    top: 55%; /* justér efter behov */
+    right: 20%;
+    z-index: 1;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    font-size: 1.3rem;
+  }
+  
+  /* Styling af Information i popup  */
+  #info-popup {
+    display: none;
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    color: var(--darkblue);
+    padding: 25px;
+    border-radius: 20px;
+    max-width: 400px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+    z-index: 9999;
+    text-align: left;
+    font-family: Arial, sans-serif;
+  }
+  
+  #info-popup h4 {
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+  
+  #info-popup button {
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: var(--darkblue);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  #info-popup {
+    line-height: 1.7; /* Giver mere luft mellem linjerne */
+  }
+  
+  #info-popup ul {
+    padding-left: 20px;
+    margin: 0;
+  }
+  
+  #info-popup li {
+    margin-bottom: 16px; /* Luft mellem hvert punkt */
+    font-size: 1rem;
+  }
 
 /* Styling af information i popup */
 #info-popup {
