@@ -126,7 +126,7 @@ h2 {
   display: flex;
   justify-content: end;
   align-items: end;
-  margin-bottom: -194px;
+  margin-bottom: -175px;
 }
 
 #pige {
@@ -178,7 +178,7 @@ h3{
   font-family: 'Big Shoulders Display';
   font-size: 3rem;
   color: var(--lightblue);
-  margin-top: 5rem;
+  margin-top: 4rem;
   font-weight: 800;
   transition: transform 0.1s ease-out;
   animation: fadeIn 1s forwards;
@@ -188,7 +188,7 @@ h3{
 
 p {
   font-family: 'Big Shoulders Display';
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: var(--lightblue);
   transition: transform 0.1s ease-out;
   animation: fadeIn 1s forwards;
