@@ -6,7 +6,6 @@
 }
 
 body {
-  height: 150vh; /* giver plads til at scrolle */
   overflow-x: hidden;
   background-color: var(--darkblue);
   font-family: 'Comic Sans MS', sans-serif;
@@ -24,7 +23,7 @@ body {
 }
 
 .panel {
-  height: 110vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,15 +86,6 @@ h2 {
   height: 200px;
 }
 
-.pil {
-  width: 70px;
-  margin-top: 120px;
-  margin-left: 200px;
-  animation: fadeIn 1s forwards;
-  animation-delay: 2.5s;
-  opacity: 0;
-}
-
 @keyframes fadeIn {
   from {
   opacity: 0;
@@ -121,7 +111,7 @@ h2 {
 }
 
 #tunnel {
-  width: 90%;
+  width: 100%;
   max-width: 600px;
   height: auto;
   transform-origin: center end;
@@ -136,13 +126,13 @@ h2 {
   display: flex;
   justify-content: end;
   align-items: end;
-  margin-bottom: -50px;
+  margin-bottom: -195px;
 }
 
 #pige {
   position: absolute;
   bottom: 10px;
-  left: 40%;
+  left: 45%;
   transform: translateX(-50%) translateY(0);
   width: 60px;
   transition: transform 0.1s ease-out;
@@ -152,10 +142,6 @@ h2 {
   opacity: 0;
 }
 
-
-#pige.move-up {
-  transform: translateX(-50%) translateY(-300px); /* eller hvor højt du vil */
-}
 
 .wave-left {
   left: 0;
@@ -188,4 +174,25 @@ h2 {
   /* Animation der får stjernen til at bevæge sig fra side til side i en loop */
 }
 
+h3{
+  font-family: 'Big Shoulders Display';
+  font-size: 3rem;
+  color: var(--lightblue);
+  margin-top: 5rem;
+  font-weight: 800;
+  transition: transform 0.1s ease-out;
+  animation: fadeIn 1s forwards;
+  animation-delay: 3s;
+  opacity: 0;
+}
+
+p {
+  font-family: 'Big Shoulders Display';
+  font-size: 2rem;
+  color: var(--lightblue);
+  transition: transform 0.1s ease-out;
+  animation: fadeIn 1s forwards;
+  animation-delay: 3s;
+  opacity: 0;
+}
   
