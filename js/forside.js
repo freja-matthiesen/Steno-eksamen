@@ -1,12 +1,12 @@
 "use strict";
 
-const pige = document.getElementById("pige");
+const pige = document.getElementById("pige"); // Henter billedet af pigen fra HTML
 
 pige.style.position = 'absolute'; // Flytter hende præcist
 let positionY = 0; // Start nederst på siden
-const targetY = -window.innerHeight / 2 + pige.offsetHeight / 2-100; // Pigen flyttes op til midten af vinduet + 80px
+const targetY = -window.innerHeight / 2 + pige.offsetHeight / 2-80; // Pigen flyttes op til midten af vinduet + 80px
 
-pige.addEventListener("click", () => {
+pige.addEventListener("click", () => { // Klik event på pigen
   // Start animationen
   moveUp();
 });
