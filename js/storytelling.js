@@ -70,3 +70,4 @@ startKnap.addEventListener("click", () => {
   spilSide.style.display = "block";
   afspilScene(aktuelScene);
 });
+
