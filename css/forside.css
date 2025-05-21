@@ -19,7 +19,7 @@
 body {
   overflow-x: hidden;
   background-color: var(--darkblue);
-  font-family: 'Comic Sans MS', sans-serif;
+  font-family: 'Big Shoulders Display', sans-serif;
 }
 
 :root{
@@ -57,7 +57,7 @@ h1 {
   color: var(--lightblue);
   font-family: 'BagelFatOne', sans-serif;
   margin-bottom: -50px;
-  margin-top: 20px;
+  margin-top: 100px;
   animation: fadeIn 1s forwards;
   animation-delay: 0.5s;
   opacity: 0;
@@ -131,7 +131,7 @@ h2 {
   position: relative;
   width: 100%;
   display: flex;
-  margin-bottom: -155px;
+  margin-bottom: -210px;
 }
 
 #pige {
@@ -183,7 +183,7 @@ h3{
   font-family: 'Big Shoulders Display';
   font-size: 3rem;
   color: var(--lightblue);
-  margin-top: 4rem;
+  margin-top: 5rem;
   font-weight: 800;
   transition: transform 0.1s ease-out;
   animation: fadeIn 1s forwards;
@@ -199,5 +199,6 @@ p {
   animation: fadeIn 1s forwards;
   animation-delay: 3s;
   opacity: 0;
+  margin-top: 1rem;
 }
   
