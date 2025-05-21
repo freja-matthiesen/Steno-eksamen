@@ -114,12 +114,11 @@ body {
 }
 
 #alertMessage {
-    font-size: 2rem;
-    color: var(--grey);
+    font-size: 1.5rem;
+    color: var(--darkblue);
     margin-bottom: 15px;
-    margin-right: 10%;
-    margin-left: 10%;
     font-family: 'BagelFatOne', sans-serif;
+    font-weight:100;
 }
 
 #modalImage {
