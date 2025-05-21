@@ -1,3 +1,10 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+
 @font-face {
   font-family: 'BagelFatOne';
   src: url('../fonts/BagelFatOne-Regular.ttf') format('truetype');
@@ -459,26 +466,31 @@ body {
   }
 
 
-  
 .popup-box {
     background-color: white;
     padding: 2rem;
     border-radius: 10px;
-    max-width: 600px;
+    max-width: 700px;
     text-align: center;
     box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  }
+
+.popup-box p {
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
   }
   
 .popup-box h2 {
     margin-top: 0;
-    font-size: 1.9rem;
+    font-size: 2.5rem;
     font-family: 'BagelFatOne', sans-serif;
   }
   
 .popup-box button {
     margin-top: 1.5rem;
     padding: 0.7rem 1.5rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     background-color: #FF9130;
     color: white;
     border: none;
@@ -486,9 +498,17 @@ body {
     cursor: pointer;
   }
   
-  .popup-box button:hover {
+.popup-box button:hover {
     background-color: #e87c10;
   }
+
+#closeInfoPopup, #closeInfoPopup2, #closeInfoPopup3 {
+  background-color: #e87c10;
+  color: white;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
 
 .popup-overlay {
     position: fixed;
@@ -506,44 +526,37 @@ body {
 .popup-content {
     background: white;
     padding: 2rem;
-    border-radius: 50px;
+    border-radius: 20px;
     max-width: 500px;
     text-align: center;
   }
 
   .popup-content h2{
     font-family: 'BagelFatOne', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
   }
-  
-  .next {
-    text-decoration: none; 
-    background-color: #374cab;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-    color: white;
-    display: inline-block; 
-}
+
+  .popup-content p{
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
 
 .genstartOgSkip {
     position: absolute;
     bottom: 10px;  
-    left: 50%;
+    left: 48%;
     transform: translateX(-50%);
     display: flex;
     flex-direction: row;
-    gap: 100px;  
-    justify-content: center;
-    align-items: center; 
-}
+    gap: 120px;  
 
+}
 
 .genstartOgSkip img {
     width: 100px;  
     height: 60px;
-
     cursor: pointer;
     margin-top: 150px;
 }

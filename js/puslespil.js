@@ -78,7 +78,7 @@ function checkPuzzleCompletion() {
 
         // Hvis puslespillet er samlet korrekt vises en alert
         if (allCorrect) {
-            showCustomAlert("Godt gået! Du har samlet puslespillet. MEN pas på. I næste opgave skal du quizze, så du må hellere kigge grundigt på det samlede puslespil her:", "img/samlet.png");
+            showCustomAlert("Godt gået! Du har samlet puslespillet. I næste opgave skal du quizze, så du må hellere kigge grundigt efter", "img/samlet.png");
         }
     }
     
