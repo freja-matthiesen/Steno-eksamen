@@ -46,7 +46,10 @@ function afspilScene(sceneNavn) {
 
   video.onended = () => {
     // Hvis begge valg er "slut", gå direkte videre
-    if (data.valg[0] === "slut" && data.valg[1] === "slut") {
+    if (sceneNavn === "slut") {
+      window.location.href = "bagside.html";
+    }
+    else if (data.valg[0] === "slut" && data.valg[1] === "slut") {
       afspilScene("slut");
     } else if (data.valg.length === 2) {
       valgMuligheder.style.display = "flex";
