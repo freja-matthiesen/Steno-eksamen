@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 @font-face {
   font-family: 'BagelFatOne';
   src: url('../fonts/BagelFatOne-Regular.ttf') format('truetype');
@@ -39,7 +45,6 @@ body {
   align-items: flex-start;
   width: 90%;
   max-width: 1200px;
-  margin-top: 100px;
 }
 
 .tekstblok {
@@ -115,10 +120,9 @@ h2 {
 }
 
 #tunnel {
-  width: 100%;
+  width: 90%;
   max-width: 600px;
   height: auto;
-  transform-origin: center end;
   transition: transform 0.1s ease-out;
 }
 
@@ -127,9 +131,7 @@ h2 {
   position: relative;
   width: 100%;
   display: flex;
-  justify-content: end;
-  align-items: end;
-  margin-bottom: -175px;
+  margin-bottom: -155px;
 }
 
 #pige {
